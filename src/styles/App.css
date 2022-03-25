@@ -2,21 +2,17 @@
   box-sizing: border-box;
 }
 
+a{
+  color: white;
+}
 .App {
   text-align: center;
 }
 
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #000;
+  min-height: 10vh;
+  height:10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,11 +25,60 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  width:100%;
+  /* border: 1px solid red; */
+}
+
+.nav{
+  display: flex;
+  /* border: 1px solid yellow; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25em 1em;
+  color: white;
+  font-size: 1.65rem;
+}
+
+.navList{
+  list-style: none;
+  text-decoration: underline;
+  display: flex;
+  /* border: 1px solid lightgreen; */
+  align-items: center;
+  padding:0;
+}
+
+.navItem{
+  /* border: 1px solid blue; */
+}
+
+.routes{
+  margin: 0 auto;
+}
+
+.routes .navItem + .navItem{
+  margin-left: 1em;
+}
+
+.contacts{
+  /* margin-left: auto; */
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.contacts .navItem{
+  padding: 0.25em 0;
+}
+
+.commission{
+  padding:0.25em 0.75em;
+  background: white;
+  border-radius: 10px;
+}
+
+.commission a{
+  color: black;
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Hero(){
+function ModList(){
   return(
     <React.Fragment>
-      <h1>HERO</h1>
+      <h1>MODLIST</h1>
     </React.Fragment>
   )
 }
 
-export default Hero;
+export default ModList;
