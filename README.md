@@ -1,6 +1,27 @@
-# Getting Started with Create React App
+# _10CT Controllers_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### _A website for 10CT Controllers, a SoCal Controller modder_
+
+#### By _**Woo Jin Kim**_
+
+## Technologies Used
+
+* _Javascript_
+* _React.js_
+
+
+## Description
+
+__
+
+
+## Known Bugs
+
+* _None_
+
+## React scripts
+  
+<details>
 
 ## Available Scripts
 
@@ -68,3 +89,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
+
+## License
+
+_MIT_
+
+## Contact Information
+
+_Woo Jin Kim (kimwoojin211@gmail.com)_
+
+Copyright (c) 2021 Woo Jin Kim
