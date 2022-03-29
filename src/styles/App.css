@@ -6,8 +6,18 @@ a{
   color: white;
 }
 
+.row{
+  display: flex;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
+  margin: 0;
 }
 
 .App-header {
@@ -26,6 +36,7 @@ a{
 
 .container{
   width:80%;
+  margin: 0 auto;
   /* border: 1px solid red; */
 }
 
@@ -89,6 +100,7 @@ a{
   /* border: 1px solid blue; */
 }
 
+
 .slide-container{
   /* border: 2px solid blue; */
   height: 90vh;
@@ -118,21 +130,23 @@ a{
   height:100%;
   top:0;
   left:0;
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.85);
   color:white;
-  margin: auto;
+  margin: 0 auto;
   z-index:1;
   display:flex;
-  align-items: center;
+  flex-direction:column;
 }
 
 .heroText {
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
+  align-self: center;
+  padding-top: 15em;
 }
 
 .heroTitle{
-  font-size: 4rem;
+  font-size: 5.5rem;
   margin:0;
   text-shadow: 3px 2px 3px rgb(122, 122, 122);
 }
@@ -140,4 +154,30 @@ a{
 .heroSubtitle{
   font-size: 2rem;
   margin:0;
+}
+
+.pastClients{
+  justify-content: flex-end;
+  align-self:space-between;
+}
+
+.players{
+  justify-content: center;
+  align-items: center;
+}
+
+.player{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.player img{
+  width:150px;
+  height:150px;
+  border:2px solid white;
+  border-radius:50%;
+}
+
+.player + .player{
+  margin-left: 1.5em;
 }

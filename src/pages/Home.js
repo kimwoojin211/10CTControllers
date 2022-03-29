@@ -8,9 +8,6 @@ function Home(){
       <Hero/>
       <div style={{width:'100%'}}>
         <div className="container">
-          <div className="pastClients">
-
-          </div>
           <div className="CTA">
 
           </div>
