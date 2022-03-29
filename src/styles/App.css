@@ -5,19 +5,18 @@
 a{
   color: white;
 }
+
 .App {
   text-align: center;
 }
 
 .App-header {
   background-color: #000;
-  min-height: 10vh;
-  height:10%;
+  min-height: 127px;
+  height: 12vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -26,7 +25,7 @@ a{
 }
 
 .container{
-  width:100%;
+  width:80%;
   /* border: 1px solid red; */
 }
 
@@ -35,9 +34,10 @@ a{
   /* border: 1px solid yellow; */
   align-items: center;
   justify-content: space-between;
-  padding: 0.25em 1em;
+  padding: 0 1em;
   color: white;
   font-size: 1.65rem;
+  width:100%;
 }
 
 .navList{
@@ -81,4 +81,63 @@ a{
 
 .commission a{
   color: black;
+}
+
+.hero{
+  width:100%;
+  height:50%;
+  /* border: 1px solid blue; */
+}
+
+.slide-container{
+  /* border: 2px solid blue; */
+  height: 90vh;
+}
+
+.each-fade{
+  width:100%;
+  height: calc(100vh - 127px);
+  /* border: 1px solid yellow; */
+}
+
+.image-container {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.sliderBackground{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.8);
+  color:white;
+  margin: auto;
+  z-index:1;
+  display:flex;
+  align-items: center;
+}
+
+.heroText {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroTitle{
+  font-size: 4rem;
+  margin:0;
+  text-shadow: 3px 2px 3px rgb(122, 122, 122);
+}
+
+.heroSubtitle{
+  font-size: 2rem;
+  margin:0;
 }

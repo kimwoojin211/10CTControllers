@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 function Header(){
   return(
     <React.Fragment>
-        <nav className="container nav">
+        <nav className="nav">
           <Link className="navHome" to="/">Home</Link>
           <ul className="navList routes">
             <li className="navItem"><Link to="/Premades">Premades</Link></li>
