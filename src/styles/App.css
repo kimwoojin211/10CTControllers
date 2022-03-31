@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  color:white;
 }
 
 a{
@@ -20,10 +21,15 @@ a{
   margin: 0;
 }
 
+.img--small{
+  width:60px;
+  height:60px;
+}
+
 .App-header {
   background-color: #000;
-  min-height: 127px;
-  height: 12vh;
+  min-height: 70px;
+  padding: 0.2em 0.2em 0 0.2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,9 +41,9 @@ a{
 }
 
 .container{
-  width:80%;
+  width:85%;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  /* border:1px solid red; */
 }
 
 .nav{
@@ -45,9 +51,9 @@ a{
   /* border: 1px solid yellow; */
   align-items: center;
   justify-content: space-between;
-  padding: 0 1em;
+  padding: 0 0.5rem;
   color: white;
-  font-size: 1.65rem;
+  font-size: 0.8125rem;
   width:100%;
 }
 
@@ -77,7 +83,6 @@ a{
   display:flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.25rem;
 }
 
 .contacts .navItem{
@@ -88,6 +93,7 @@ a{
   padding:0.25em 0.75em;
   background: white;
   border-radius: 10px;
+  display: none;
 }
 
 .commission a{
@@ -97,87 +103,182 @@ a{
 .hero{
   width:100%;
   height:50%;
-  /* border: 1px solid blue; */
+  border: 1px solid lightgreen;
 }
 
-
-.slide-container{
-  /* border: 2px solid blue; */
-  height: 90vh;
-}
 
 .each-fade{
   width:100%;
-  height: calc(100vh - 127px);
+  height: calc(100vh - 70px);
   /* border: 1px solid yellow; */
 }
 
 .image-container {
   width: 100%;
+  height:100%;
+  overflow: hidden;
+  position: relative;
   /* border: 1px solid red; */
 }
 
 .sliderBackground{
-  width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
+  left: 50%;
+  transform: translateX(-50%) scale(0.5,1);
+  position: absolute;
 }
 
 .overlay{
-  position:absolute;
   width:100%;
   height:100%;
+  background:rgba(0,0,0,0.75);
+}
+
+.heroContent{
+  position:absolute;
   top:0;
   left:0;
-  background:rgba(0,0,0,0.85);
-  color:white;
   margin: 0 auto;
   z-index:1;
   display:flex;
   flex-direction:column;
+  justify-content: flex-end;
+  border: 1px solid red;
 }
 
 .heroText {
-  margin: auto;
   text-align: center;
-  align-self: center;
-  padding-top: 15em;
+  align-self: center;  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  border: 2px solid blue;
 }
 
 .heroTitle{
-  font-size: 5.5rem;
+  /* font-size: 5.5rem; */
+  font-size: 2.45em;
   margin:0;
   text-shadow: 3px 2px 3px rgb(122, 122, 122);
+  border: 1px solid violet;
 }
 
 .heroSubtitle{
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 0.9rem;
   margin:0;
+  border: 1px solid yellow;
 }
 
 .pastClients{
   justify-content: flex-end;
   align-self:space-between;
+  /* border: 1px solid yellow; */
+  padding-bottom: 1em;
+}
+
+.pastClients p{
+  font-size: 0.8rem;
+  font-weight:bold;
 }
 
 .players{
   justify-content: center;
   align-items: center;
+  width:100%;
+  border: 2px solid yellow;
+}
+
+.featuredPlayers{
+  width:80%;
+  border: 1px solid blue;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.andMore{
+  width:20%;
+  border: 1px solid red;
 }
 
 .player{
   display:flex;
   flex-direction: column;
   align-items:center;
+  margin-left:0.3em;
 }
-.player img{
-  width:150px;
-  height:150px;
+
+.player + .player{
+  /* margin-left: 1.5em; */
+  /* margin-left:0.5em; */
+}
+
+.playerPic{
   border:2px solid white;
   border-radius:50%;
 }
 
-.player + .player{
-  margin-left: 1.5em;
+.playerTag{
+  margin:0.5em 0;
+  font-weight: bold;
+}
+
+
+.homeContentContainer{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+  margin:0 auto;
+  /* border:1px solid red; */
+  background: linear-gradient(225deg, rgba(0,0,0,1) 22%, rgba(0,7,37,1) 49%, rgba(75,0,0,1) 100%);
+}
+
+.homeContent{
+  height:100%;
+  width:80%;
+  /* border:1px solid blue; */
+  margin: 0 auto;
+}
+
+.homeCTA{
+  margin-top:2em;
+  justify-content:space-around;
+  flex-grow: 1;
+  /* border:1px solid yellow; */
+}
+
+.homePremades{
+  padding: 0 1em;
+  width:50%;
+  height:100%;
+  flex-grow: 1;
+  /* border:1px solid green; */
+}
+
+.homePremades img + img{
+  margin-left: 1em;
+}
+
+.homeRedirects{
+  padding: 1em;
+  width:50%;
+  height:100%;
+  flex-grow: 1;
+  margin: auto;
+  /* border:1px solid yellow; */
+}
+
+.premadeImage{
+  width:125px;
+  height:125px;
+}
+
+.homeRedirects h3{
+  margin: 1.5em auto;
+  height:3em;
+  width:60%;
+  background: peachpuff;
+  color:black;
+  border-radius:1.5em;
 }

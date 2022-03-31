@@ -1,14 +1,17 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import sliderImg1 from '../img/gcc1.jpg';
-import sliderImg2 from '../img/gcc2.jpg';
-import sliderImg3 from '../img/gcc3.jpg';
-import sliderImg4 from '../img/room1.jpg';
-import sliderImg5 from '../img/gcc4.jpg';
-import Suf from '../img/Suf.jpg';
-import Asashi from '../img/Asashi.jpg';
-import Casper from '../img/Casper.jpg';
+import sliderImg1 from '../img/homeBackground/gcc1.jpg';
+import sliderImg2 from '../img/homeBackground/gcc2.jpg';
+import sliderImg3 from '../img/homeBackground/gcc3.jpg';
+import sliderImg4 from '../img/homeBackground/room1.jpg';
+import sliderImg5 from '../img/homeBackground/gcc4.jpg';
+import Suf from '../img/players/Suf.jpg';
+import Asashi from '../img/players/Asashi.jpg';
+import Casper from '../img/players/Casper.jpg';
+import Squid from '../img/players/Squid.jpg';
+import Venelox from '../img/players/Venelox.jpg';
+import Franz from '../img/players/Franz.jpg';
 
 const sliderImages= [
   { url: sliderImg1 },
@@ -21,9 +24,9 @@ const sliderImages= [
 function Hero(){
   return(
     <React.Fragment>
-      <div className="hero container">
+      <div className="hero">
         <Fade
-          duration={2500}
+          duration={4000}
           arrows={false}
           pauseOnHover={false}
           canSwipe={false}
@@ -32,29 +35,46 @@ function Hero(){
             <div className="each-fade" key={index}>
               <div className="image-container">
                 <img className="sliderBackground" src={fadeImage.url} />
-                <div className="overlay">
-                  <div className="heroText">
+                <div className="heroContent overlay">
+                  <div className="heroText container">
                     <h2 className="heroTitle">10CT Controllers</h2>
                     <p className="heroSubtitle"><i>SoCal Controller Modder</i></p>
                   </div>
                   <div className="pastClients container">
-                    <p>Providing tournament-winning controllers for players such as:</p>
+                    <p>Affordable, tournament-grade controllers & repairs for players such as:</p>
                     <div className="players row">
-                      <div className="player">
-                        <img src={Suf} alt="Suf"></img>
-                        <p className="playerTag">Suf</p>
+                      <div className="featuredPlayers row">
+                        <div className="player">
+                          <img className="playerPic img--small" src={Squid} alt="Squid"></img>
+                          <p className="playerTag">Squid</p>
+                        </div>
+                        <div className="player">
+                          <img className="playerPic img--small" src={Suf} alt="Suf"></img>
+                          <p className="playerTag">Suf</p>
+                        </div>
+                        <div className="player">
+                          <img className="playerPic img--small" src={Asashi} alt="Asashi"/>
+                          <p className="playerTag">Asashi</p>
+                        </div>
+                        <div className="player">
+                          <img className="playerPic img--small" src={Casper} alt="Casper"></img>
+                          <p className="playerTag">Casper</p>
+                        </div>
+                        
+                        <div className="player">
+                          <img className="playerPic img--small" src={Venelox} alt="Venelox"></img>
+                          <p className="playerTag">Venelox</p>
+                        </div>
+                        <div className="player">
+                          <img className="playerPic img--small" src={Franz} alt="Franz"></img>
+                          <p className="playerTag">Franz</p>
+                        </div>
+                        
                       </div>
-                      <div className="player">
-                        <img src={Asashi} alt="Asashi"/>
-                        <p className="playerTag">Asashi</p>
+                      <div className="andMore">
+                        <h4>& more!</h4>
                       </div>
-                      <div className="player">
-                        <img src={Casper} alt="Casper"></img>
-                        <p className="playerTag">Casper</p>
-                      </div>
-                      <div className="player">
-                        <p>& more!</p>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
