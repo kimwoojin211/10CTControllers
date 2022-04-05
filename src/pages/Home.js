@@ -2,9 +2,9 @@ import React from 'react';
 import Hero from '../components/Hero';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import premade1 from '../img/premades/premade1.jpg';
-import premade2 from '../img/premades/premade2.jpg';
-import premade3 from '../img/premades/premade3.jpg';
-import premade4 from '../img/premades/premade4.jpg';
+// import premade2 from '../img/premades/premade2.jpg';
+// import premade3 from '../img/premades/premade3.jpg';
+// import premade4 from '../img/premades/premade4.jpg';
 
 function Home(){
   return(
@@ -26,9 +26,9 @@ function Home(){
               <h2>Check out current premades in stock</h2>
               <div className="premadeImages">
                 <img className="premadeImage" src={premade1} alt="" />
-                <img className="premadeImage" src={premade2} alt="" />
+                {/* <img className="premadeImage" src={premade2} alt="" />
                 <img className="premadeImage" src={premade3} alt="" />
-                <img className="premadeImage" src={premade4} alt="" />
+                <img className="premadeImage" src={premade4} alt="" /> */}
               </div>
               <h3>View more</h3>
             </div>

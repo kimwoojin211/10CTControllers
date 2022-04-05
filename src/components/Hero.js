@@ -4,7 +4,7 @@ import 'react-slideshow-image/dist/styles.css';
 import sliderImg1 from '../img/homeBackground/gcc1.jpg';
 import sliderImg2 from '../img/homeBackground/gcc2.jpg';
 import sliderImg3 from '../img/homeBackground/gcc3.jpg';
-import sliderImg4 from '../img/homeBackground/room1.jpg';
+import sliderImg4 from '../img/homeBackground/desk1.jpg';
 import sliderImg5 from '../img/homeBackground/gcc4.jpg';
 import Suf from '../img/players/Suf.jpg';
 import Asashi from '../img/players/Asashi.jpg';
