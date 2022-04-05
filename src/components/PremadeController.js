@@ -12,7 +12,11 @@ function PremadeController(props){
         <h2>Specs:</h2>
         <div className="premadeSpecsWrapper">
           <ul className="premadeSpecs">
-            {props.premadeSpecList}
+            {
+              props.premadeSpecList.map((spec,index) =>
+                <li>{spec}</li>
+              )
+            }
             {/* <li>Indigo Top / JP White Bottom</li>
             <li>Brand New T3 board from an boxed Ult edition</li>
             <li>Wavedash Notches + Vanilla Shield Drop</li>
