@@ -44,7 +44,7 @@ a{
 }
 
 .pageTitle{
-  margin: 1rem 0 2.5rem 0;
+  margin: 0.5rem 0 1.5rem 0;
 }
 
 /* ~~~~ Header ~~~~ */
@@ -313,7 +313,7 @@ a{
 
 .premadeControllerContainer{
   border:1px solid white;
-  width:85%;
+  width:80%;
   margin: 0 auto 2rem auto;
   display:flex;
   max-width:425px;
@@ -363,8 +363,38 @@ a{
   margin: 0 0 1.5rem 0;
 }
 
+@media only screen and (min-width:375px) {
+
+  .img--med {
+    width: 80px;
+    height: 80px;
+  }
+  .nav{
+    font-size: 4vmin;
+    padding: 0.4rem 1.2rem 0.4rem 0.5rem;
+  }
+
+  .contacts{
+    font-size: 3.5vmin
+  }
+}
+
+
 
 @media only screen and (min-width:500px) {
+
+  .img--med {
+    width: 90px;
+    height: 90px;
+  }
+
+  .nav{
+    font-size:1.24rem;
+  }
+
+  .contacts {
+    font-size: 1.24rem;
+  }
 
   .premadeInfoContainer h2{
     font-size: 2rem;
@@ -374,9 +404,24 @@ a{
     font-size:1rem;
     line-height: 1.75;
   }
+
+  
 }
 
 @media only screen and (min-width:900px) {
+  .img--med {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .nav {
+    font-size: 1.5rem;
+  }
+  
+  .contacts {
+    font-size: 1.4rem;
+  }
+  
   .premadeControllerContainer {
     flex-direction: row;
     justify-content: center;
