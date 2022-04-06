@@ -25,7 +25,7 @@ function Home(){
             <div className="homePremades">
               <h2>Check out current premades in stock</h2>
               <div className="premadeImages">
-                <img className="premadeImage" src={premade1} alt="" />
+                <img className="premadeImage img--med" src={premade1} alt="" />
                 {/* <img className="premadeImage" src={premade2} alt="" />
                 <img className="premadeImage" src={premade3} alt="" />
                 <img className="premadeImage" src={premade4} alt="" /> */}

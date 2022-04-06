@@ -19,7 +19,7 @@ a{
 }
 
 .App {
-  text-align: center;
+  /* text-align: center; */
   margin: 0;
 }
 
@@ -45,6 +45,7 @@ a{
 
 .pageTitle{
   margin: 0.5rem 0 1.5rem 0;
+  text-align: center;
 }
 
 /* ~~~~ Header ~~~~ */
@@ -200,6 +201,7 @@ a{
   align-self:space-between;
   /* border: 1px solid yellow; */
   padding-bottom: 1em;
+  text-align: center;
 }
 
 .pastClients p{
@@ -336,7 +338,7 @@ a{
 .premadeInfoContainer{
   /* width:50 */
   width:100%;
-  border:1px solid yellow;
+  border:1px solid white;
   text-align: center;
   margin: 0;
   display:flex;
@@ -347,7 +349,6 @@ a{
 .premadeInfoContainer h2 {
   margin: 1.25rem 0 0 0;
 }
-
 
 .premadeSpecs{
   margin-block-start: 1.5em;
@@ -361,6 +362,39 @@ a{
 
 .premadePrice{
   margin: 0 0 1.5rem 0;
+}
+
+/* ~~~~ FAQ ~~~~ */
+
+.FAQList{
+  margin: 2em auto 9em auto;
+  max-width:900px;
+}
+
+.FAQListItemContainer{
+  margin: 0;
+}
+
+.FAQQuestionWrapper{
+  border:1px solid grey;
+}
+
+.FAQQuestion{
+  background:white;
+  padding: 0.5em 1em;
+  color: black;
+  margin:0;
+}
+
+.FAQAnswerWrapper{
+  position:relative;
+  width:95%;
+  margin:0 auto 0.5em auto;
+  padding:1em 3em;
+  border:1px solid grey;
+  border-radius:10px;
+  transform: translateY(-10px);
+  z-index:-1;
 }
 
 @media only screen and (min-width:375px) {
