@@ -6,7 +6,7 @@ function Header(){
   return(
     <React.Fragment>
         <nav className="nav">
-          <Link className="navHome" to="/"><img className="img--med" src={logo} alt="10CT logo"/></Link>
+          <Link className="navHome" to="/"><img className="img--small" src={logo} alt="10CT logo"/></Link>
           <ul className="navList routes">
             <li className="navItem"><Link to="/Premades">Premades</Link></li>
             <li className="navItem"><Link to="/ModList">Mod List</Link></li>

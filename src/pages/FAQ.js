@@ -43,7 +43,7 @@ Cut Springs are better for your fingers to L cancel and other tech involving tri
 {question:`My controller is drifting when I plug it in!
 `,answer:`You likely have had basic snapback capacitors installed into your controller. Perform a soft reset by holding X+Y+Start for 2 seconds and press any button on your controller to reconnect it. This only needs to be done on console, or on Smash Ultimate, third party adapters. 
 `},
-{question:`Controllers based on Budget?`,answer:`For a build closer to $100, you can get:
+{question:`Controllers based on budget?`,answer:`For a build closer to $100, you can get:
 $50~60...T3 Controller
 $10……..Basic Snapback Capacitors
 $25……..Wavedash Notches without UCF shield drop

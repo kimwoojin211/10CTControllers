@@ -31,7 +31,8 @@ function Hero(){
           pauseOnHover={false}
           canSwipe={false}
         >
-          {sliderImages.map((fadeImage, index) => (
+          {
+          sliderImages.map((fadeImage, index) => (
             <div className="each-fade" key={index}>
               <div className="image-container">
                 <img className="sliderBackground" src={fadeImage.url} />
@@ -68,19 +69,18 @@ function Hero(){
                         <div className="player">
                           <img className="playerPic img--small" src={Franz} alt="Franz"></img>
                           <p className="playerTag">Franz</p>
-                        </div>
-                        
+                        </div>  
                       </div>
                       <div className="andMore">
                         <h4>& more!</h4>
                       </div>
-                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          ))}
+          ))
+          }
         </Fade>
     </div>
     </React.Fragment>

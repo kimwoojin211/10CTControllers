@@ -5,8 +5,12 @@
   color:white;
 }
 
-a{
+/* a{
   color: white;
+} */
+
+h1, h2, h3, h4, h5{
+  text-align: center;
 }
 
 .row{
@@ -24,17 +28,13 @@ a{
 }
 
 .img--small{
-  width:60px;
-  height:60px;
+  width:50px;
+  height:50px;
 }
 
 .img--med{
-  width:70px;
-  height:70px;
-}
-
-.App-link {
-  color: #61dafb;
+  width:90px;
+  height:90px;
 }
 
 .container{
@@ -55,7 +55,8 @@ a{
   /* border: 1px solid yellow; */
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 0.55rem;
+  min-height: 70px;
+  padding: 0 0.55rem;
   color: white;
   font-size: 0.85rem;
   width:100%;
@@ -67,7 +68,7 @@ a{
   display: flex;
   /* border: 1px solid lightgreen; */
   align-items: center;
-  padding:0;
+  padding: 0;
 }
 
 .navItem{
@@ -76,7 +77,7 @@ a{
 
 .routes{
   margin: 0 auto;
-  padding-right:0.2rem;
+  padding-right:0.4rem;
 }
 
 .routes .navItem + .navItem{
@@ -127,14 +128,16 @@ a{
 /* ~~~~ Hero ~~~~ */
 .hero{
   width:100%;
-  height:50%;
+  min-height: calc(100vh - 70px);
   border: 1px solid lightgreen;
 }
 
 
 .each-fade{
   width:100%;
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  height:100%;
+  /* height: calc(100vh - 70px); */
   /* border: 1px solid yellow; */
 }
 
@@ -159,6 +162,16 @@ a{
   background:rgba(0,0,0,0.75);
 }
 
+.heroText {
+  text-align: center;
+  align-self: center;  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  border: 2px solid blue;
+}
+
 .heroContent{
   position:absolute;
   top:0;
@@ -171,20 +184,10 @@ a{
   border: 1px solid red;
 }
 
-.heroText {
-  text-align: center;
-  align-self: center;  
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  border: 2px solid blue;
-}
-
 .heroTitle{
   /* font-size: 5.5rem; */
   font-size: 2.45em;
-  margin:0;
+  margin: 0;
   text-shadow: 3px 2px 3px rgb(122, 122, 122);
   border: 1px solid violet;
 }
@@ -192,15 +195,15 @@ a{
 .heroSubtitle{
   /* font-size: 2rem; */
   font-size: 0.9rem;
-  margin:0;
+  margin: 0;
   border: 1px solid yellow;
 }
 
 .pastClients{
   justify-content: flex-end;
-  align-self:space-between;
+  align-self: space-between;
+  padding-bottom: 0.2rem;
   /* border: 1px solid yellow; */
-  padding-bottom: 1em;
   text-align: center;
 }
 
@@ -213,11 +216,12 @@ a{
   justify-content: center;
   align-items: center;
   width:100%;
-  border: 2px solid yellow;
+  border: 1px solid yellow;
 }
 
 .featuredPlayers{
   width:80%;
+  max-width: 218px;
   border: 1px solid blue;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -239,6 +243,9 @@ a{
   /* margin-left: 1.5em; */
   /* margin-left:0.5em; */
 }
+.player p {
+  font-size:0.7rem;
+}
 
 .playerPic{
   border:2px solid white;
@@ -253,63 +260,85 @@ a{
 /* ~~~~ Content ~~~~ */
 
 .homeContentContainer{
-  display:flex;
-  flex-wrap: wrap;
   width:100%;
-  margin:0 auto;
+  height:100%;
   /* border:1px solid red; */
-  background: linear-gradient(225deg, rgba(0,0,0,1) 22%, rgba(0,7,37,1) 49%, rgba(75,0,0,1) 100%);
+  background: linear-gradient(225deg, rgba(75, 0, 0, 1) 12%, rgba(0,7,37,1) 49%, rgba(75,0,0,1) 100%);
 }
 
 .homeContent{
-  height:100%;
   width:80%;
-  /* border:1px solid blue; */
+  height:100%;
   margin: 0 auto;
+  /* border:1px solid blue; */
+}
+
+.contentTitle{
+  padding-top:1em;
+  margin:0;
 }
 
 .homeCTA{
-  margin-top:2em;
-  justify-content:space-around;
-  flex-grow: 1;
+  display:flex;
+  flex-direction:column;
   /* border:1px solid yellow; */
 }
 
 .homePremades{
   padding: 0 1em;
-  width:50%;
+  width:100%;
   height:100%;
-  flex-grow: 1;
+  margin:0 auto;
   /* border:1px solid green; */
+  order:2;
 }
 
-.homePremades img + img{
-  margin-left: 1em;
+.homePremades p{
+  text-align:center;
+  margin-top:0;
+  margin-bottom: 1em;
+}
+
+.homePremadeGallery{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  /* border:1px solid pink; */
 }
 
 .homeRedirects{
-  padding: 1em;
-  width:50%;
+  padding: 0.5em;
   height:100%;
-  flex-grow: 1;
-  margin: auto;
-  /* border:1px solid yellow; */
+  margin: 0 auto;
+  text-align: center;
+  order:1;
 }
 
-.premadeGallery img{
-  width:125px;
-  height:125px;
+.homeRedirects a{
+  text-decoration: none;
 }
 
-.homeRedirects h3{
-  margin: 1.5em auto;
-  height:3em;
-  width:60%;
-  background: peachpuff;
+.homeRedirects p{
+  width:100%;
+  margin: .9em auto;
+  padding: .5em 1em;
   color:black;
   border-radius:1.5em;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
+.modListRedirect{
+  background: peachpuff;
+}
+
+.commissionRedirect{
+  background:lightblue;
+}
+
+.homePremadeImg {
+  margin: 0.4rem;
+}
 
 /* ~~~~ Premades ~~~~ */
 
@@ -404,12 +433,12 @@ a{
     height: 80px;
   }
   .nav{
-    font-size: 4vmin;
+    font-size: 1rem;
     padding: 0.4rem 1.2rem 0.4rem 0.5rem;
   }
 
   .contacts{
-    font-size: 3.5vmin
+    font-size: 0.9rem;
   }
 }
 
