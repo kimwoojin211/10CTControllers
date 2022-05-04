@@ -5,24 +5,58 @@ import {Link} from 'react-router-dom';
 import premade1 from '../img/premades/premade1.jpg';
 import premade2 from '../img/premades/premade2.jpg';
 import premade3 from '../img/premades/premade3.jpg';
-// import premade4 from '../img/premades/premade4.jpg';
+import Suf from '../img/players/Suf.jpg';
+import Asashi from '../img/players/Asashi.jpg';
+import Casper from '../img/players/Casper.jpg';
+import Squid from '../img/players/Squid.jpg';
+import Venelox from '../img/players/Venelox.jpg';
+import Franz from '../img/players/Franz.jpg';
 
 function Home(){
   return(
     <React.Fragment>
       <Hero/>
-      {/* <div style={{width:'100%'}}>
-        <div className="container">
-          <div className="CTA">
+      <div className="pastClients container">
+        <h4>Affordable, tournament-grade repairs & custom-built controllers for players like:</h4>
+        <div className="players row">
+          <div className="featuredPlayers row">
+            <div className="player">
+              <img className="playerPic img--med" src={Squid} alt="Squid"></img>
+              <p className="playerTag">Squid</p>
+            </div>
+            <div className="player">
+              <img className="playerPic img--med" src={Suf} alt="Suf"></img>
+              <p className="playerTag">Suf</p>
+            </div>
+            <div className="player">
+              <img className="playerPic img--med" src={Asashi} alt="Asashi"/>
+              <p className="playerTag">Asashi</p>
+            </div>
+            <div className="player">
+              <img className="playerPic img--med" src={Casper} alt="Casper"></img>
+              <p className="playerTag">Casper</p>
+            </div>
+            
+            <div className="player">
+              <img className="playerPic img--med" src={Venelox} alt="Venelox"></img>
+              <p className="playerTag">Venelox</p>
+            </div>
+            <div className="player">
+              <img className="playerPic img--med" src={Franz} alt="Franz"></img>
+              <p className="playerTag">Franz</p>
+            </div>  
           </div>
         </div>
-      </div> */}
+          <div className="andMore">
+            <h4>& more!</h4>
+          </div>
+      </div>
       <div className="homeContentContainer">
         <div className="container homeContent">
           <h3 className="contentTitle">Interested in your very own modded controller?</h3>
           <div className="homeCTA" >
             <div className="homePremades">
-              <p>Check out the premade controllers currently available:</p>
+              <p>Don't want to wait? Check out some premade modded controllers  ready for order and delivery.</p>
               <div className="homePremadeGallery">
                 <img className="homePremadeImg img--med" src={premade1} alt="" />
                 <img className="homePremadeImg img--med" src={premade2} alt="" />
@@ -32,8 +66,8 @@ function Home(){
               <Link to="/Premades"><p>Click here for more details</p></Link>
             </div>
             <div className="homeRedirects">
-              <Link to="/ModList"><p className="modListRedirect">Click here for a list of<br/>modifications and their prices.</p></Link>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSetB5_ocLehaWCkuh77VvXX6bjMfFWCPrtmXZMEwcSN1OIskg/viewform"><p className="commissionRedirect">Ready to order? <br/>Commission a controller here.</p></a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSetB5_ocLehaWCkuh77VvXX6bjMfFWCPrtmXZMEwcSN1OIskg/viewform"><p className="commissionRedirect">Commission a repair or <br/> custom-built controller here.</p></a>
+              <Link to="/ModList"><p className="modListRedirect">Click here for a list of<br/>modifications and pricing.</p></Link>
             </div>
           </div>
         </div>

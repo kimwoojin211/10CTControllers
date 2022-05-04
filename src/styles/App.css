@@ -1,5 +1,9 @@
 /* ~~~~ Globals ~~~~ */
 
+html{
+  font-size: 16px;
+}
+
 *{
   box-sizing: border-box;
   color:white;
@@ -28,13 +32,13 @@ h1, h2, h3, h4, h5{
 }
 
 .img--small{
-  width:50px;
-  height:50px;
+  width:20px;
+  height:20px;
 }
 
 .img--med{
-  width:90px;
-  height:90px;
+  width:65px;
+  height:65px;
 }
 
 .container{
@@ -48,40 +52,69 @@ h1, h2, h3, h4, h5{
   text-align: center;
 }
 
+.button{
+
+}
 /* ~~~~ Header ~~~~ */
 
 .nav{
-  display: flex;
   /* border: 1px solid yellow; */
   align-items: center;
   justify-content: space-between;
-  min-height: 70px;
-  padding: 0 0.55rem;
-  color: white;
+  height: 80px;
+  padding: 0 0.35rem;
   font-size: 0.85rem;
-  width:100%;
 }
+
+.navHome, .navHome img{
+  width:57px;
+  height:57px;
+}
+
 
 .navList{
   list-style: none;
-  text-decoration: underline;
-  display: flex;
   /* border: 1px solid lightgreen; */
   align-items: center;
   padding: 0;
 }
 
-.navItem{
+.routes a{
   /* border: 1px solid blue; */
+  text-decoration: none;
+  border-bottom: 1px solid white;
 }
 
 .routes{
   margin: 0 auto;
-  padding-right:0.4rem;
+  padding-right:0.2rem;
 }
 
 .routes .navItem + .navItem{
   margin-left: 1em;
+}
+
+.navLinks{
+  transform: translateY(-14px);
+}
+
+.navCommission {
+  padding: 0.35em 0.45em;
+  background: white;
+  border-radius: 0.75rem;
+  color: black;
+}
+
+
+.navContacts{
+  /* margin-left: auto; */
+  display:flex;
+  justify-content:flex-end;
+  margin: 0;
+}
+
+.navContacts .navItem{
+  padding: 0.25em 0.35em;
 }
 
 .navDiscord a {
@@ -100,42 +133,20 @@ h1, h2, h3, h4, h5{
     0px 0px 15px #249CEA;
 }
 
-.contacts{
-  /* margin-left: auto; */
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  font-size:0.8125rem;
-}
-
-.contacts .navItem{
-  padding: 0.25em 0;
-}
-
-.commission{
-  padding:0.25em 0.75em;
-  background: white;
-  border-radius: 10px;
-  display: none;
-}
-
-.commission a{
-  color: black;
-}
-
 /* ~~~~ Home~~~~ */
 
 /* ~~~~ Hero ~~~~ */
 .hero{
   width:100%;
-  min-height: calc(100vh - 70px);
-  border: 1px solid lightgreen;
+  min-height: calc(100vh - 80px);
+  /* border: 1px solid lightgreen; */
 }
+
 
 
 .each-fade{
   width:100%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 80px);
   height:100%;
   /* height: calc(100vh - 70px); */
   /* border: 1px solid yellow; */
@@ -168,8 +179,9 @@ h1, h2, h3, h4, h5{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -80%);
-  border: 2px solid blue;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+  /* border: 2px solid blue; */
 }
 
 .heroContent{
@@ -181,25 +193,32 @@ h1, h2, h3, h4, h5{
   display:flex;
   flex-direction:column;
   justify-content: flex-end;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .heroTitle{
   /* font-size: 5.5rem; */
-  font-size: 2.45em;
+  font-size: 2.1rem;
   margin: 0;
-  text-shadow: 3px 2px 3px rgb(122, 122, 122);
-  border: 1px solid violet;
+  text-shadow: 3px 2px 3px rgb(122, 122, 122),
+  0px 0px 1px rgb(122, 122, 122),
+  0px 0px 5px rgb(122, 122, 122),
+  0px 0px 10px rgb(122, 122, 122),
+  0px 0px 15px rgb(122, 122, 122),
+  0px 0px 25px rgb(122, 122, 122);
+  /* border: 1px solid violet; */
 }
 
 .heroSubtitle{
   /* font-size: 2rem; */
   font-size: 0.9rem;
   margin: 0;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
-.pastClients{
+/* ~~~~ Content ~~~~ */
+
+.pastClients {
   justify-content: flex-end;
   align-self: space-between;
   padding-bottom: 0.2rem;
@@ -207,57 +226,55 @@ h1, h2, h3, h4, h5{
   text-align: center;
 }
 
-.pastClients p{
+.pastClients p {
   font-size: 0.8rem;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-.players{
+.players {
   justify-content: center;
   align-items: center;
-  width:100%;
-  border: 1px solid yellow;
+  width: 100%;
+  /* border: 1px solid yellow; */
 }
 
-.featuredPlayers{
-  width:80%;
-  max-width: 218px;
-  border: 1px solid blue;
+.featuredPlayers {
+  width: 80%;
+  /* border: 1px solid blue; */
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.andMore{
-  width:20%;
-  border: 1px solid red;
+.andMore {
+  width: 20%;
+  /* border: 1px solid red; */
 }
 
-.player{
-  display:flex;
+.player {
+  display: flex;
   flex-direction: column;
-  align-items:center;
-  margin-left:0.3em;
+  align-items: center;
+  margin-left: 0.3em;
 }
 
-.player + .player{
+.player+.player {
   /* margin-left: 1.5em; */
   /* margin-left:0.5em; */
 }
+
 .player p {
-  font-size:0.7rem;
+  font-size: 0.7rem;
 }
 
-.playerPic{
-  border:2px solid white;
-  border-radius:50%;
+.playerPic {
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
-.playerTag{
-  margin:0.5em 0;
+.playerTag {
+  margin: 0.5em 0;
   font-weight: bold;
 }
-
-/* ~~~~ Content ~~~~ */
 
 .homeContentContainer{
   width:100%;
@@ -282,6 +299,10 @@ h1, h2, h3, h4, h5{
   display:flex;
   flex-direction:column;
   /* border:1px solid yellow; */
+}
+
+.homeCTA p{
+  font-size: 0.85rem;
 }
 
 .homePremades{
@@ -428,18 +449,21 @@ h1, h2, h3, h4, h5{
 
 @media only screen and (min-width:375px) {
 
+
   .img--med {
     width: 80px;
     height: 80px;
   }
+  
   .nav{
     font-size: 1rem;
-    padding: 0.4rem 1.2rem 0.4rem 0.5rem;
+    padding: 0.4rem 0.5rem;
   }
 
   .contacts{
     font-size: 0.9rem;
   }
+
 }
 
 
@@ -451,13 +475,13 @@ h1, h2, h3, h4, h5{
     height: 90px;
   }
 
-  .nav{
+  /* .nav{
     font-size:1.24rem;
   }
 
   .contacts {
     font-size: 1.24rem;
-  }
+  } */
 
   .premadeInfoContainer h2{
     font-size: 2rem;
@@ -471,19 +495,19 @@ h1, h2, h3, h4, h5{
   
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:768px) {
   .img--med {
     width: 100px;
     height: 100px;
   }
   
-  .nav {
+  /* .nav {
     font-size: 1.5rem;
   }
   
   .contacts {
     font-size: 1.4rem;
-  }
+  } */
   
   .premadeControllerContainer {
     flex-direction: row;

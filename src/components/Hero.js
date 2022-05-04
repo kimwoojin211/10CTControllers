@@ -37,12 +37,12 @@ function Hero(){
               <div className="image-container">
                 <img className="sliderBackground" src={fadeImage.url} />
                 <div className="heroContent overlay">
-                  <div className="heroText container">
+                  {/* <div className="heroText container">
                     <h2 className="heroTitle">10CT Controllers</h2>
                     <p className="heroSubtitle"><i>SoCal Controller Modder</i></p>
-                  </div>
-                  <div className="pastClients container">
-                    <p>Affordable, tournament-grade controllers & repairs for players such as:</p>
+                  </div> */}
+                  {/* <div className="pastClients container">
+                    <p>Affordable, tournament-grade repairs & custom-built controllers for players like:</p>
                     <div className="players row">
                       <div className="featuredPlayers row">
                         <div className="player">
@@ -75,13 +75,17 @@ function Hero(){
                         <h4>& more!</h4>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
           ))
           }
         </Fade>
+        <div className="heroText container">
+          <h2 className="heroTitle">10CT Controllers</h2>
+          <p className="heroSubtitle"><i>SoCal Controller Modder</i></p>
+        </div>
     </div>
     </React.Fragment>
   )
