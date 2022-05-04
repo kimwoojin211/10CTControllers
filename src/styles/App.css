@@ -37,8 +37,8 @@ h1, h2, h3, h4, h5{
 }
 
 .img--med{
-  width:65px;
-  height:65px;
+  width:69px;
+  height:69px;
 }
 
 .container{
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5{
 }
 
 .button{
-
+  padding: 0.35em 0.45em;
 }
 /* ~~~~ Header ~~~~ */
 
@@ -219,11 +219,9 @@ h1, h2, h3, h4, h5{
 /* ~~~~ Content ~~~~ */
 
 .pastClients {
-  justify-content: flex-end;
-  align-self: space-between;
-  padding-bottom: 0.2rem;
   /* border: 1px solid yellow; */
   text-align: center;
+    background: linear-gradient(0deg, rgb(0,0,0) 64%, rgb(0, 10, 53) 71%);
 }
 
 .pastClients p {
@@ -239,22 +237,18 @@ h1, h2, h3, h4, h5{
 }
 
 .featuredPlayers {
-  width: 80%;
   /* border: 1px solid blue; */
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.andMore {
-  width: 20%;
-  /* border: 1px solid red; */
-}
 
 .player {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 0.3em;
+  margin-top: 0.6rem;
+  margin-left: 0.3rem;
 }
 
 .player+.player {
@@ -263,7 +257,7 @@ h1, h2, h3, h4, h5{
 }
 
 .player p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .playerPic {
@@ -276,7 +270,15 @@ h1, h2, h3, h4, h5{
   font-weight: bold;
 }
 
-.homeContentContainer{
+
+.andMore{
+  text-align:center;
+  margin-top: 0.8rem;
+}
+
+/* ~~~~ CTA ~~~~ */
+
+.homeCTAContainer{
   width:100%;
   height:100%;
   /* border:1px solid red; */
@@ -291,17 +293,18 @@ h1, h2, h3, h4, h5{
 }
 
 .contentTitle{
-  padding-top:1em;
+  font-size: 1.0125rem;
+  padding: 1.85rem 0;
   margin:0;
 }
 
-.homeCTA{
+.CTAContent{
   display:flex;
   flex-direction:column;
   /* border:1px solid yellow; */
 }
 
-.homeCTA p{
+.CTAContent p{
   font-size: 0.85rem;
 }
 

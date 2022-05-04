@@ -16,45 +16,45 @@ function Home(){
   return(
     <React.Fragment>
       <Hero/>
-      <div className="pastClients container">
-        <h4>Affordable, tournament-grade repairs & custom-built controllers for players like:</h4>
-        <div className="players row">
-          <div className="featuredPlayers row">
-            <div className="player">
-              <img className="playerPic img--med" src={Squid} alt="Squid"></img>
-              <p className="playerTag">Squid</p>
+      <div className="pastClients">
+        <div class="container">
+          <h3 className="contentTitle">Affordable, tournament-grade repairs & custom-built controllers for players such as:</h3>
+          <div className="players row">
+            <div className="featuredPlayers row">
+              <div className="player">
+                <img className="playerPic img--med" src={Squid} alt="Squid"></img>
+                <p className="playerTag">Squid</p>
+              </div>
+              <div className="player">
+                <img className="playerPic img--med" src={Suf} alt="Suf"></img>
+                <p className="playerTag">Suf</p>
+              </div>
+              <div className="player">
+                <img className="playerPic img--med" src={Asashi} alt="Asashi"/>
+                <p className="playerTag">Asashi</p>
+              </div>
+              <div className="player">
+                <img className="playerPic img--med" src={Casper} alt="Casper"></img>
+                <p className="playerTag">Casper</p>
+              </div>
+          
+              <div className="player">
+                <img className="playerPic img--med" src={Venelox} alt="Venelox"></img>
+                <p className="playerTag">Venelox</p>
+              </div>
+              <div className="player">
+                <img className="playerPic img--med" src={Franz} alt="Franz"></img>
+                <p className="playerTag">Franz</p>
+              </div>
             </div>
-            <div className="player">
-              <img className="playerPic img--med" src={Suf} alt="Suf"></img>
-              <p className="playerTag">Suf</p>
-            </div>
-            <div className="player">
-              <img className="playerPic img--med" src={Asashi} alt="Asashi"/>
-              <p className="playerTag">Asashi</p>
-            </div>
-            <div className="player">
-              <img className="playerPic img--med" src={Casper} alt="Casper"></img>
-              <p className="playerTag">Casper</p>
-            </div>
-            
-            <div className="player">
-              <img className="playerPic img--med" src={Venelox} alt="Venelox"></img>
-              <p className="playerTag">Venelox</p>
-            </div>
-            <div className="player">
-              <img className="playerPic img--med" src={Franz} alt="Franz"></img>
-              <p className="playerTag">Franz</p>
-            </div>  
           </div>
+          <h5 className="andMore">& many more!</h5>
         </div>
-          <div className="andMore">
-            <h4>& more!</h4>
-          </div>
       </div>
-      <div className="homeContentContainer">
-        <div className="container homeContent">
-          <h3 className="contentTitle">Interested in your very own modded controller?</h3>
-          <div className="homeCTA" >
+      <div className="homeCTAContainer">
+        <div className="container">
+          <h3 className="CTATitle">Interested in your very own modded controller?</h3>
+          <div className="CTAContent" >
             <div className="homePremades">
               <p>Don't want to wait? Check out some premade modded controllers  ready for order and delivery.</p>
               <div className="homePremadeGallery">
@@ -66,8 +66,8 @@ function Home(){
               <Link to="/Premades"><p>Click here for more details</p></Link>
             </div>
             <div className="homeRedirects">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSetB5_ocLehaWCkuh77VvXX6bjMfFWCPrtmXZMEwcSN1OIskg/viewform"><p className="commissionRedirect">Commission a repair or <br/> custom-built controller here.</p></a>
-              <Link to="/ModList"><p className="modListRedirect">Click here for a list of<br/>modifications and pricing.</p></Link>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSetB5_ocLehaWCkuh77VvXX6bjMfFWCPrtmXZMEwcSN1OIskg/viewform"><p className="commissionRedirect button">Commission a repair or <br/> custom-built controller here.</p></a>
+              <Link to="/ModList"><p className="modListRedirect button">Click here for a list of<br/>modifications and pricing.</p></Link>
             </div>
           </div>
         </div>
