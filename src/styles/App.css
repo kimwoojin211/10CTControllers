@@ -9,10 +9,6 @@ html{
   color:white;
 }
 
-/* a{
-  color: white;
-} */
-
 h1, h2, h3, h4, h5{
   text-align: center;
 }
@@ -27,7 +23,6 @@ h1, h2, h3, h4, h5{
 }
 
 .App {
-  /* text-align: center; */
   margin: 0;
 }
 
@@ -53,7 +48,10 @@ h1, h2, h3, h4, h5{
 }
 
 .button{
-  padding: 0.35em 0.45em;
+  padding: 0.5em;
+  border-radius: 1em;
+  text-align: center;
+  text-decoration: none;
 }
 /* ~~~~ Header ~~~~ */
 
@@ -67,57 +65,60 @@ h1, h2, h3, h4, h5{
 }
 
 .navHome, .navHome img{
-  width:57px;
-  height:57px;
-}
-
-
-.navList{
-  list-style: none;
-  /* border: 1px solid lightgreen; */
-  align-items: center;
-  padding: 0;
-}
-
-.routes a{
-  /* border: 1px solid blue; */
-  text-decoration: none;
-  border-bottom: 1px solid white;
-}
-
-.routes{
-  margin: 0 auto;
-  padding-right:0.2rem;
-}
-
-.routes .navItem + .navItem{
-  margin-left: 1em;
+  width:60px;
+  height:60px;
 }
 
 .navLinks{
-  transform: translateY(-14px);
+  width:100%;
+  justify-content: flex-end;
+  margin-top:auto;
+  padding-right: 0.2rem;
+}
+
+.navRoutes a{
+  /* border: 1px solid blue; */
+  text-decoration: none;
+}
+
+.navRoutes{
+  width:100%;
+}
+
+.navRoutesList{
+  list-style: none;
+  /* border: 1px solid lightgreen; */
+  padding: 0;
+  margin: auto 0 auto auto;
+}
+
+.navItem{
+  border-bottom: 1px solid white;
+}
+
+.navRoutes .navItem + .navItem{
+  margin-left: 1em;
 }
 
 .navCommission {
-  padding: 0.35em 0.45em;
   background: white;
-  border-radius: 0.75rem;
   color: black;
+  margin-left: auto;
+  font-size: 0.8rem;
 }
-
 
 .navContacts{
   /* margin-left: auto; */
-  display:flex;
   justify-content:flex-end;
-  margin: 0;
+  margin-top: 0.25em;
 }
 
-.navContacts .navItem{
-  padding: 0.25em 0.35em;
+.navContacts > *{
+  padding-left: .4em;
+  padding-right: .2em;
 }
 
-.navDiscord a {
+.navDiscord {
   color: #988be0;
   text-shadow: 0px 0px 1px #988be0,
     0px 0px 5px #988be0,
@@ -125,7 +126,7 @@ h1, h2, h3, h4, h5{
     0px 0px 15px #988be0;
 }
 
-.navTwitter a {
+.navTwitter {
   color: #249CEA;
   text-shadow: 0px 0px 1px #249CEA,
     0px 0px 5px #249CEA,
@@ -170,7 +171,7 @@ h1, h2, h3, h4, h5{
 .overlay{
   width:100%;
   height:100%;
-  background:rgba(0,0,0,0.75);
+  background:rgba(0,0,0,0.85);
 }
 
 .heroText {
@@ -221,12 +222,20 @@ h1, h2, h3, h4, h5{
 .pastClients {
   /* border: 1px solid yellow; */
   text-align: center;
-    background: linear-gradient(0deg, rgb(0,0,0) 64%, rgb(0, 10, 53) 71%);
+  /* background: linear-gradient(0deg, rgb(0,0,0) 64%, rgb(0, 10, 53) 71%); */
+  background: linear-gradient(225deg, rgba(75, 0, 0, 1) 12%, rgba(0, 7, 37, 1) 48%, rgba(75, 0, 0, 1) 100%);
+
 }
 
 .pastClients p {
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.contentTitle {
+  font-size: 1.0125rem;
+  padding: 1.65rem 0;
+  margin: 0;
 }
 
 .players {
@@ -273,47 +282,96 @@ h1, h2, h3, h4, h5{
 
 .andMore{
   text-align:center;
-  margin-top: 0.8rem;
+  margin-top: 1.3rem;
+  margin-bottom: 0;
+  padding-bottom: 1.75rem;
 }
 
 /* ~~~~ CTA ~~~~ */
 
-.homeCTAContainer{
-  width:100%;
+.CTA{
+  background: rgb(18, 21, 37);
   height:100%;
+  padding: 1.5rem 0;
   /* border:1px solid red; */
-  background: linear-gradient(225deg, rgba(75, 0, 0, 1) 12%, rgba(0,7,37,1) 49%, rgba(75,0,0,1) 100%);
-}
-
-.homeContent{
-  width:80%;
-  height:100%;
-  margin: 0 auto;
-  /* border:1px solid blue; */
-}
-
-.contentTitle{
-  font-size: 1.0125rem;
-  padding: 1.85rem 0;
-  margin:0;
+  /* background: linear-gradient(225deg, rgba(75, 0, 0, 1) 12%, rgba(0,7,37,1) 49%, rgba(75,0,0,1) 100%); */
 }
 
 .CTAContent{
   display:flex;
   flex-direction:column;
-  /* border:1px solid yellow; */
+  margin: 1rem auto;
+  /* border:1px solid blue; */
 }
 
-.CTAContent p{
-  font-size: 0.85rem;
+.CTAContent .button{
+  width: 80%;
+  font-weight:bold;
+  font-size:0.8rem;
+  text-align:center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
+.CTAContent h4{
+  margin-top:0;
+}
+
+.CTAContent ul{
+  margin-top:0;
+  padding-inline-start: 1rem;
+}
+
+.CTAContent li{
+  font-size:0.8rem;
+  width:85%;
+  margin:0.6rem auto;
+}
+
+.CTAContent a{
+  text-decoration: none;
+}
+
+.CTATitle{
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.CTACommission{
+  background: rgb(69, 80, 149);
+}
+
+.CTAModList{
+  background: black;
+}
+
+.CTAPremades{
+  background: #E5E4E2;
+  color:black;
+}
+
+.CTAFAQ{
+  color:orange
+}
+
+.CTATwitter{
+  color: #249CEA;
+}
+
+.CTADiscord{
+  color: #988be0;
+}
+
+
+
+
+
+/* 
 .homePremades{
   padding: 0 1em;
   width:100%;
   height:100%;
   margin:0 auto;
-  /* border:1px solid green; */
   order:2;
 }
 
@@ -327,7 +385,6 @@ h1, h2, h3, h4, h5{
   display:flex;
   flex-wrap: wrap;
   justify-content:center;
-  /* border:1px solid pink; */
 }
 
 .homeRedirects{
@@ -362,7 +419,7 @@ h1, h2, h3, h4, h5{
 
 .homePremadeImg {
   margin: 0.4rem;
-}
+} */
 
 /* ~~~~ Premades ~~~~ */
 

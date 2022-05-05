@@ -83,7 +83,7 @@ function Hero(){
           }
         </Fade>
         <div className="heroText container">
-          <h2 className="heroTitle">10CT Controllers</h2>
+          <h1 className="heroTitle">10CT Controllers</h1>
           <p className="heroSubtitle"><i>SoCal Controller Modder</i></p>
         </div>
     </div>
