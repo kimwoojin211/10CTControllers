@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import { TwitterTimelineEmbed, TwitterTweetEmbed } from 'react-twitter-embed';
+import { TwitterTweetEmbed } from 'react-twitter-embed';
+import { Fade,Slide } from 'react-slideshow-image';
 import {Link} from 'react-router-dom';
 import premade1 from '../img/premades/premade1.jpg';
 import premade2 from '../img/premades/premade2.jpg';
@@ -11,6 +12,8 @@ import Casper from '../img/players/Casper.jpg';
 import Squid from '../img/players/Squid.jpg';
 import Venelox from '../img/players/Venelox.jpg';
 import Franz from '../img/players/Franz.jpg';
+
+const testimonialArray = ["1472063565095915523", "1448828944652795906", "1402415528673697792", "1420643017522774018", "1427355646794555393", "1430298525250715650", "1430996181438681095", "1441509134789222400", "1442394120656355334"]
 
 function Home(){
   return(
@@ -73,7 +76,46 @@ function Home(){
           </div>
         </div>
       </div>
-
+      <div className="testimonials">
+        <div className="container">
+          <h2 className="contentTitle">Testimonials</h2>
+          <div className="tweets">
+          <Slide easing="ease">
+            {
+              testimonialArray.map((tweetId,index)=>(
+                <div className="each-slide">
+                  <div className="tweetWrapper">
+                    <TwitterTweetEmbed
+                      onLoad={function noRefCheck(){}}
+                      options={{theme: 'dark',align:'center'}}
+                      tweetId={tweetId}
+                    />
+                  </div>
+                </div>
+              ))
+            }
+          </Slide>
+          </div>
+          {/* <div className="tweets">
+            <TwitterTweetEmbed
+              onLoad={function noRefCheck(){}}
+              options={{theme: 'dark',align:'center'}}
+              tweetId="1472063565095915523"
+            />
+          </div> */}
+        </div>
+      </div>
+{/* 
+        <div style={{width:500,border:'2px solid black'}}>
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="in10cityGCC"
+            theme="dark"
+            noFooter="true"
+            transparent="true"
+            options={{height:400}}
+          />
+        </div> */}
     </React.Fragment>
   )
 }
