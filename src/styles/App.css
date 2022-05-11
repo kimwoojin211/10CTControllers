@@ -13,7 +13,19 @@ h1, h2, h3, h4, h5{
   text-align: center;
 }
 
-a, p{
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.1rem;
+}
+
+h5{
+  font-size:0.95rem;
+}
+
+a, p, li{
   text-decoration: none;
   font-size: 0.8rem;
 }
@@ -103,19 +115,11 @@ a, p{
 }
 
 .navDiscord {
-  /* color: #988be0;
-  text-shadow: 0px 0px 1px #988be0,
-    0px 0px 5px #988be0,
-    0px 0px 10px #988be0,
-    0px 0px 15px #988be0; */
+  /*color: #988be0;*/
 }
 
 .navTwitter {
-  /*color: #249CEA;
-   text-shadow: 0px 0px 1px #249CEA,
-    0px 0px 5px #249CEA,
-    0px 0px 10px #249CEA,
-    0px 0px 15px #249CEA; */
+  /*color: #249CEA;*/
   padding-left: .4rem;
   padding-right: .2rem;
 }
@@ -138,38 +142,28 @@ a, p{
 /* ~~~~ Home~~~~ */
 
 /* ~~~~ Hero ~~~~ */
-.hero{
-  width:100%;
-  min-height: calc(100vh - 85px);
-  /* border: 1px solid lightgreen; */
-}
 
 .each-fade{
-  width:100%;
-  min-height: calc(100vh - 85px);
-  height:100%;
-  /* height: calc(100vh - 70px); */
-  /* border: 1px solid yellow; */
+  height: calc(100vh - 90px);
 }
 
 .image-container {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  position: relative;
-  /* border: 1px solid red; */
 }
 
 .sliderBackground{
   height: 100%;
-  left: 50%;
-  transform: translateX(-50%) scale(0.5,1);
+  width: 100%;
+  object-fit: cover;
   position: absolute;
 }
 
 .overlay{
+  position:absolute;
   width:100%;
   height:100%;
+  top:0;
+  left:0;
   background:rgba(0,0,0,0.8);
 }
 
@@ -181,91 +175,63 @@ a, p{
   left: 50%;
   transform: translate(-50%, 0%);
   z-index: 2;
-  /* border: 2px solid blue; */
-}
-
-.heroContent{
-  position:absolute;
-  top:0;
-  left:0;
-  margin: 0 auto;
-  z-index:1;
-  display:flex;
-  flex-direction:column;
-  justify-content: flex-end;
-  /* border: 1px solid red; */
 }
 
 .heroTitle{
-  /* font-size: 5.5rem; */
-  font-size: 2.1rem;
   margin: 0;
-  text-shadow: 3px 2px 3px rgb(122, 122, 122),
+  text-shadow: 3px 4px 3px rgb(122, 122, 122),
   0px 0px 1px rgb(122, 122, 122),
   0px 0px 5px rgb(122, 122, 122),
   0px 0px 10px rgb(122, 122, 122),
   0px 0px 15px rgb(122, 122, 122),
-  0px 0px 25px rgb(122, 122, 122);
+  0px 0px 25px rgb(122, 122, 122),
+  0px 0px 30px rgb(122, 122, 122);
   /* border: 1px solid violet; */
 }
 
 .heroSubtitle{
-  /* font-size: 2rem; */
-  font-size: 0.9rem;
   margin: 0;
   /* border: 1px solid yellow; */
 }
 
 /* ~~~~ Content ~~~~ */
 
-.pastClients {
+.pastClientsContainer {
   /* border: 1px solid yellow; */
-  text-align: center;
   /* background: linear-gradient(0deg, rgb(0,0,0) 64%, rgb(0, 10, 53) 71%); */
   background: linear-gradient(225deg, rgba(75, 0, 0, 1) 12%, rgba(0, 7, 37, 1) 48%, rgba(75, 0, 0, 1) 100%);
+  padding-bottom: 1.6rem;
 
 }
 
-.pastClients p {
-  font-size: 0.8rem;
+.pastClientsContainer p {
   font-weight: bold;
 }
 
-.contentTitle {
-  font-size: 1.0125rem;
-  padding: 1.65rem 0;
-  margin: 0;
+.pastClientsContainer h2{
+  align-self: center;
 }
 
-.players {
-  justify-content: center;
-  align-items: center;
+.contentTitle {
+  margin-top:1.6rem;
+}
+
+.playerList {
   width: 100%;
+  height:100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 1.4rem;
   /* border: 1px solid yellow; */
 }
-
-.featuredPlayers {
-  /* border: 1px solid blue; */
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 
 .player {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0.6rem;
-  margin-left: 0.3rem;
-}
-
-.player+.player {
-  /* margin-left: 1.5em; */
-  /* margin-left:0.5em; */
-}
-
-.player p {
-  font-size: 0.8rem;
+  margin: 0.4rem 0.3rem;
 }
 
 .playerPic {
@@ -274,16 +240,14 @@ a, p{
 }
 
 .playerTag {
-  margin: 0.5em 0;
+  margin: 0.8rem 0;
   font-weight: bold;
 }
 
-
 .andMore{
   text-align:center;
-  margin-top: 1.3rem;
+  margin-top: 0.9rem;
   margin-bottom: 0;
-  padding-bottom: 1.75rem;
 }
 
 /* ~~~~ CTA ~~~~ */
@@ -291,16 +255,14 @@ a, p{
 .CTA{
   background: rgb(18, 21, 37);
   height:100%;
-  padding: 1.5rem 0;
+  margin: auto;
   /* border:1px solid red; */
   /* background: linear-gradient(225deg, rgba(75, 0, 0, 1) 12%, rgba(0,7,37,1) 49%, rgba(75,0,0,1) 100%); */
 }
 
 .CTAContent{
-  display:flex;
-  flex-direction:column;
-  margin: 1rem auto;
-  /* border:1px solid blue; */
+  height:100%;
+  margin:1rem auto;
 }
 
 .CTAContent .button{
@@ -308,12 +270,13 @@ a, p{
   font-weight:bold;
   font-size:0.8rem;
   text-align:center;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+  margin: 0.5rem auto;
+  padding: 0.75em;
+  max-width: 250px;
 }
 
 .CTAContent h4{
-  margin-top:0;
+  margin: 0.5rem auto 1rem auto;
 }
 
 .CTAContent ul{
@@ -322,7 +285,6 @@ a, p{
 }
 
 .CTAContent li{
-  font-size:0.8rem;
   width:85%;
   margin:0.6rem auto;
 }
@@ -332,8 +294,13 @@ a, p{
 }
 
 .CTATitle{
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+
+.CTAOptions{
+  margin:0 auto;
+  width:100%;
 }
 
 .CTACommission{
@@ -378,62 +345,6 @@ a, p{
   margin:0 auto;
   margin-bottom: 2rem;
 }
-
-
-/* 
-.homePremades{
-  padding: 0 1em;
-  width:100%;
-  height:100%;
-  margin:0 auto;
-  order:2;
-}
-
-.homePremades p{
-  text-align:center;
-  margin-top:0;
-  margin-bottom: 1em;
-}
-
-.homePremadeGallery{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content:center;
-}
-
-.homeRedirects{
-  padding: 0.5em;
-  height:100%;
-  margin: 0 auto;
-  text-align: center;
-  order:1;
-}
-
-.homeRedirects a{
-  text-decoration: none;
-}
-
-.homeRedirects p{
-  width:100%;
-  margin: .9em auto;
-  padding: .5em 1em;
-  color:black;
-  border-radius:1.5em;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.modListRedirect{
-  background: peachpuff;
-}
-
-.commissionRedirect{
-  background:lightblue;
-}
-
-.homePremadeImg {
-  margin: 0.4rem;
-} */
 
 /* ~~~~ Premades ~~~~ */
 
@@ -526,6 +437,18 @@ a, p{
     font-size: 0.9rem;
   }
 
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2{
+    font-size: 1.24rem;
+  }
+
+  h5{
+    font-size: 1rem;
+  }
+
   .navHome, .navHome img{
     width:75px;
     height:75px;
@@ -534,22 +457,38 @@ a, p{
   .navListItem + .navListItem{
     margin-left: 1rem;
   }
+
+  .navCommission{
+    font-size: 0.85rem;
+  }
+
+  .playerList{
+    max-width: 310px;
+  }
+
 }
 
 @media only screen and (min-width:480px) {
 
+  p{
+    font-size:1rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
   .img--med {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 
-  /* .nav{
-    font-size:1.24rem;
+  .sliderBackground {
+    width: 100%;
+    transform:none;
+    object-fit: cover;
   }
 
-  .contacts {
-    font-size: 1.24rem;
-  } */
 
   .premadeInfoContainer h2{
     font-size: 2rem;
@@ -560,18 +499,43 @@ a, p{
     line-height: 1.75;
   }
 
-  
+  .pastClientsContainer{
+    padding: 3.5rem 0;
+  }
+
+  .pastClientsContainer > .container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pastClientsContainer .contentTitle{
+    width: 43%;
+    line-height:1.5;
+  }
+
+  .pastClients{
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width:768px) {
-  a, p{
+  a{
     font-size: 1rem;
+  }
+  
+  h1{
+    font-size:4rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
   }
 
   .navHome, .navHome img {
     width: 80px;
     height: 80px;
   }
+
   .navListItem + .navListItem{
     margin-left: 1.3rem;
   }
@@ -580,15 +544,46 @@ a, p{
     width: 100px;
     height: 100px;
   }
-  
-  /* .nav {
-    font-size: 1.5rem;
+
+  .playerList {
+    max-width: 430px;
   }
-  
-  .contacts {
-    font-size: 1.4rem;
-  } */
-  
+
+  .CTA {
+    height: 275px;
+    flex-direction: row;
+  }
+
+  .CTAContent {
+    margin: 0 auto;
+    border: 1px solid grey;
+  }
+
+  .CTAContent .button {
+    font-size: 0.8rem;
+  }
+
+  .CTATitle {
+    width: 80%;
+    margin: 1.3rem auto;
+  }
+
+  .CTAOptions {
+    /* width: 85%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; */
+  }
+
+  .CTAOptions>* {
+    width: 28%;
+  }
+
+  .CTACommission.button {
+    margin: 1.8rem auto;
+    width: 70%;
+  }
+
   .premadeControllerContainer {
     flex-direction: row;
     justify-content: center;
