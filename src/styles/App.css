@@ -70,11 +70,15 @@ li{
 
 .pageTitle{
   margin: 0.5rem 0;
-  border: 1px solid blue;
 }
 
 .pageBody{
-  margin: 2rem auto;
+  margin: 1rem auto;
+}
+
+.pageNote{
+  margin:0.2rem auto;
+  font-size: 0.8rem;
 }
 
 .button{
@@ -207,7 +211,7 @@ li{
   /* border: 1px solid yellow; */
 }
 
-/* ~~~~ Content ~~~~ */
+/* ~~~~ Home Content ~~~~ */
 
 .pastClientsContainer {
   /* border: 1px solid yellow; */
@@ -412,7 +416,43 @@ li{
   margin: 0 0 1.5rem 0;
 }
 
+/* ~~~~ Mod List ~~~~ */
+
+.modListBody{
+  max-width:600px;
+}
+
+.modListTitle{
+  text-align: left;
+  margin: 0.4rem 0;
+}
+
+.modListContainer{
+  margin: 0 auto;
+}
+
+.modListItem{
+  justify-content: space-between;
+}
+
+.modListItem > div{
+  border: 1px solid gray;
+  padding-left: 0.35rem;
+  padding-bottom: 0.15rem;
+}
+
+.modListFeature{
+  width: 90%;
+}
+
+.modListPrice{
+  width: 17.5%;
+}
 /* ~~~~ FAQ ~~~~ */
+
+.FAQBody {
+  max-width: 900px;
+}
 
 .FAQList{
   max-width:900px;
@@ -503,7 +543,10 @@ li{
   .playerList{
     max-width: 310px;
   }
-
+  
+  .modListPrice {
+      width: 15%;
+    }
 }
 
 @media only screen and (min-width:480px) {
@@ -553,6 +596,10 @@ li{
 
   .pastClients{
     width: 50%;
+  }
+
+  .modListPrice{
+    width: 11%;
   }
 }
 
@@ -649,6 +696,10 @@ li{
     font-size: 1.4rem;
     line-height: 1.75;
   }
+
+  .modListPrice {
+      width: 10%;
+    }
 
   .FAQList li{
     font-size: 1rem;

@@ -86,7 +86,7 @@ function FAQ(){
     <React.Fragment>
       <h1 className="pageTitle">FAQ</h1>
       {/* <h3 className="pageSubtitle">Click on a question to reveal an answer!</h3> */}
-      <div className="pageBody container">
+      <div className="pageBody FAQBody container">
         <div className="FAQList">
           <div className="FAQListItemContainer" key={1}>
             <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,1)} id='q1'>
