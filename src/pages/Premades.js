@@ -2,6 +2,7 @@ import React from 'react';
 import PremadeController from "../components/PremadeController";
 import premadeImg1 from '../img/premades/premade1.jpg';
 import premadeImg2 from '../img/premades/premade2.jpg';
+// import titleImg from '../img/logos/shine.jpg';
 
 const premadeList = [
   {imgURL:premadeImg1,
@@ -40,17 +41,21 @@ const speclist2 =
 function Premades(){
   return(
     <React.Fragment>
-      <h1 className="pageTitle">PREMADES</h1>
-      {
-        premadeList.map((premade,index) =>
-          <PremadeController
-            id={index}
-            premadeImgURL={premade.imgURL}
-            premadeSpecList={premade.specList}
-            premadePrice={premade.price}
-            />
-        )
-      }
+      {/* <div>
+        <img src={titleImg} className="titleimg" alt="fox shine stencil"/>
+      </div> */}
+        <h1 className="pageTitle">PREMADES</h1>
+      <div className="pageBody">
+        {
+          premadeList.map((premade,index) =>
+            <PremadeController
+              id={index}
+              premadeImgURL={premade.imgURL}
+              premadeSpecList={premade.specList}
+              premadePrice={premade.price}
+              />
+          )
+        }
       {/* <PremadeController 
         premadeImgURL={premadeImg1}
         premadeSpecList={speclist1}
@@ -61,6 +66,7 @@ function Premades(){
         premadeSpecList={speclist2}
         premadePrice={100}
         /> */}
+      </div>
     </React.Fragment>
   )
 }

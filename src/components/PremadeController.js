@@ -14,7 +14,7 @@ function PremadeController(props){
           <ul className="premadeSpecs">
             {
               props.premadeSpecList.map((spec,index) =>
-                <li>{spec}</li>
+                <li><p>{spec}</p></li>
               )
             }
             {/* <li>Indigo Top / JP White Bottom</li>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import sliderImg1 from '../img/homeBackground/gcc1.jpg';
-import sliderImg2 from '../img/homeBackground/gcc2.jpg';
-import sliderImg3 from '../img/homeBackground/gcc3.jpg';
-import sliderImg4 from '../img/homeBackground/paracords.jpg';
-import sliderImg5 from '../img/homeBackground/desk1.jpg';
+import sliderImg1 from '../img/background/gcc1.jpg';
+import sliderImg2 from '../img/background/gcc2.jpg';
+import sliderImg3 from '../img/background/gcc3.jpg';
+import sliderImg4 from '../img/background/paracords.jpg';
+import sliderImg5 from '../img/background/desk1.jpg';
 
 const sliderImages= [
   { imgURL: sliderImg1 },

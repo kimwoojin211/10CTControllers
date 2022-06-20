@@ -1,11 +1,9 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import Player from '../components/Player';
 import { TwitterTweetEmbed } from 'react-twitter-embed';
-import { Fade,Slide } from 'react-slideshow-image';
+import { Slide } from 'react-slideshow-image';
 import {Link} from 'react-router-dom';
-import premade1 from '../img/premades/premade1.jpg';
-import premade2 from '../img/premades/premade2.jpg';
-import premade3 from '../img/premades/premade3.jpg';
 import Suf from '../img/players/Suf.jpg';
 import Asashi from '../img/players/Asashi.jpg';
 import Casper from '../img/players/Casper.jpg';
@@ -14,6 +12,7 @@ import Venelox from '../img/players/Venelox.jpg';
 import Franz from '../img/players/Franz.jpg';
 
 const playerArray = [{"Squid":Squid}, {"Suf":Suf}, {"Asashi":Asashi}, {"Casper":Casper}, {"Venelox":Venelox}, {"Franz":Franz}]
+
 const testimonialArray = ["1472063565095915523", "1448828944652795906", "1402415528673697792", "1420643017522774018", "1427355646794555393", "1430298525250715650", "1430996181438681095", "1441509134789222400", "1442394120656355334"]
 
 function Home(){
@@ -28,10 +27,11 @@ function Home(){
             <div className="playerList row">
               {
                 playerArray.map((player,index)=>(
-                  <div className="player">
-                    <img className="playerPic img--med" src={Object.values(player)[0]} alt={Object.keys(player)[0]}/>
-                    <h5 className="playerTag">{Object.keys(player)[0]}</h5>
-                  </div>
+                  <Player
+                    id={index}
+                    playerImg={Object.values(player)[0]}
+                    playerTag={Object.keys(player)[0]}
+                    />
                 ))
               }
             </div>
@@ -55,13 +55,12 @@ function Home(){
             <h3 className="CTATitle">Questions?</h3>
             <ul>
               <li>Check out the <Link to="/FAQ" className="CTAFAQ">FAQ</Link> page for common modding questions.</li>
-              <li>Join the <a className="CTADiscord" href="https://discord.gg/EajRdDrR">10CT  Discord</a> and check the channels to see if your question's already been answered!</li>
+              <li>Join the <a className="CTADiscord" href="https://discord.gg/EajRdDrR">10CT Discord</a> and check the channels to see if your question's already been answered!</li>
               <li>DM me on <a className="CTATwitter" href="https://twitter.com/in10cityGCC">Twitter</a>, and make sure to follow for updates on new premade controller availability.</li>
             </ul>
         </div>
       </div>
-      <div className="testimonials">
-        <div className="container">
+      <div className="testimonialContainer">
           <h2 className="contentTitle">Testimonials</h2>
           <div className="tweets">
           <Slide easing="ease">
@@ -72,6 +71,7 @@ function Home(){
                     <TwitterTweetEmbed
                       onLoad={function noRefCheck(){}}
                       options={{theme: 'dark',align:'center'}}
+                      // pauseOnHover={true}
                       tweetId={tweetId}
                     />
                   </div>
@@ -80,14 +80,6 @@ function Home(){
             }
           </Slide>
           </div>
-          {/* <div className="tweets">
-            <TwitterTweetEmbed
-              onLoad={function noRefCheck(){}}
-              options={{theme: 'dark',align:'center'}}
-              tweetId="1472063565095915523"
-            />
-          </div> */}
-        </div>
       </div>
     </React.Fragment>
   )

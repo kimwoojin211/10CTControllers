@@ -1,4 +1,6 @@
 import React from 'react';
+import backgroundImg from '../img/background/falcolaser.jpg';
+import ModListTable from '../components/ModListTable';
 
 const modListArray = [
   {feature:"T3 Stickbox Replacement", price:"$5"},
@@ -22,9 +24,7 @@ const notchArray= [
   {feature:"North + West + East Firefox Angles (max firefox for 3 cardinals, max wavedash, shield drop)", price:"$70"}, 
   {feature:"Full Firefox Gate / Hybrid Gate (max firefox, max wd, min wavedash, shield drop)", price:"$80"}, 
 ];
-/*
-  **Tension Mods** $0-$5  
-*/
+
 const tensionModArray =[
   {feature:"Lubed Triggers",price:"*"},
   {feature:"Trigger Springs Cut or Removed",price:"*"},
@@ -36,61 +36,25 @@ const tensionModArray =[
 function ModList(){
   return(
     <React.Fragment>
+      <img src={backgroundImg} className="bg" alt="falco laser background"/>
       <h1 className="pageTitle">MOD LIST</h1>
       <div className="pageBody modListBody container">
         <p className="pageNote"><i>Shipping can be done through USPS or UPS. Please contact me for international shipping.</i></p>
-        <h4 className="modListTitle">General</h4>
-        <div className="modListContainer">
-          {
-            modListArray.map((modification,index) => (
-              <div className="modListItem row">
-                <div className="modListFeature">
-                  <span>{modification.feature}</span>
-                </div>
-                <div className="modListPrice">
-                  <span>{modification.price}</span>
-                </div>
-              </div>
-            ))
-          }
-        </div>
+        <ModListTable
+          tableTitle= "General"
+          modListArray={modListArray}/>
+        
+        <ModListTable
+          tableTitle= "Notches"
+          modListArray={notchArray}/>
+        
+        <ModListTable
+          tableTitle= "Tension Mods"
+          modListArray={tensionModArray}/>
 
-        <h4 className="modListTitle">Notches</h4>
-        <div className="modListContainer">
-          {
-            notchArray.map((modification,index) => (
-              <div className="modListItem row">
-                <div className="modListFeature">
-                  <span>{modification.feature}</span>
-                </div>
-                <div className="modListPrice">
-                  <span>{modification.price}</span>
-                </div>
-              </div>
-            ))
-          }
-        </div>
-
-        <h4 className="modListTitle">Tension Mods</h4>
-        <div className="modListContainer">
-          {
-            tensionModArray.map((modification,index) => (
-              <div className="modListItem row">
-                <div className="modListFeature">
-                  <span>{modification.feature}</span>
-                </div>
-                
-                <div className="modListPrice">
-                  <span>{modification.price}</span>
-                </div>
-              </div>
-            ))
-          }
-        </div>
         <p className="pageNote"><i>* 1 tension mod free of charge w/ a commission,<br/>
-        2 tension mods is $2.50,<br/>
-        3 or more tension mods is $5.00.</i></p>
-
+        2 tension mods is $2.50 total,<br/>
+        3+ tension mods is $5.00 total.</i></p>
       </div>
     </React.Fragment>
   )

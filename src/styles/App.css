@@ -63,7 +63,7 @@ li{
 }
 
 .container{
-  width:85%;
+  width:80%;
   margin: 0 auto;
   /* border:1px solid red; */
 }
@@ -73,7 +73,7 @@ li{
 }
 
 .pageBody{
-  margin: 1rem auto;
+  margin: 1.5rem auto;
 }
 
 .pageNote{
@@ -87,6 +87,22 @@ li{
   text-align: center;
   text-decoration: none;
 }
+/* 
+.titleimg{
+  position: absolute;
+  left:0;
+  transform: translateX(150%);
+  width:50px;
+  height:50px;
+  z-index:-1;
+} */
+
+.bg{
+  width:100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
 /* ~~~~ Header ~~~~ */
 
 .nav{
@@ -94,6 +110,7 @@ li{
   justify-content: space-between;
   height: 90px;
   padding: 0 0.3rem;
+  background:transparent;
 }
 
 .navHome, .navHome img{
@@ -321,16 +338,18 @@ li{
 }
 
 .CTACommission{
-  background: rgb(69, 80, 149);
+  background: #E5E4E2;
+  color:black;
 }
 
 .CTAModList{
-  background: black;
+  background: rgb(69, 80, 149);
+
 }
 
 .CTAPremades{
-  background: #E5E4E2;
-  color:black;
+  background: white;
+  color: black;
 }
 
 .CTAFAQ{
@@ -348,6 +367,11 @@ li{
 
 /* ~~~~ Testimonials ~~~~ */
 
+.testimonialContainer{
+  width:300px;
+  margin:0 auto;
+}
+
 .tweetWrapper{
   display:flex;
   justify-content:center;
@@ -361,6 +385,11 @@ li{
 .tweets{
   margin:0 auto;
   margin-bottom: 2rem;
+}
+
+.react-slideshow-wrapper.slide{
+  width:300px;
+  margin:0 auto;
 }
 
 /* ~~~~ Premades ~~~~ */
@@ -516,7 +545,7 @@ li{
   }
 
   h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 
   h2{
@@ -556,7 +585,7 @@ li{
   }
 
   h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   .img--med {
@@ -616,6 +645,10 @@ li{
     font-size: 1.5rem;
   }
 
+  .bg{
+    transform: translateX(6%);
+  }
+
   .navHome, .navHome img {
     width: 80px;
     height: 80px;
@@ -650,7 +683,7 @@ li{
 
   .CTATitle {
     width: 80%;
-    margin: 1.3rem auto;
+    margin: 1.5rem auto;
   }
 
   .CTAOptions {
