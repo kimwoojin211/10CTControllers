@@ -55,7 +55,7 @@ function Home(){
             href="https://forms.gle/oHdcpBJLUZG68md66"
             className="CTACommissionPhobGCC button"
           >
-            Looking to get your own PhobGCC Controller? Click here.
+            Looking to get the new PhobGCC Controller? Click here.
           </a>
         </div>
         <div className="CTAContent container col">

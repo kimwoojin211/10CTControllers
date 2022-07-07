@@ -239,15 +239,14 @@ li{
   font-size: 0.9rem;
   margin: 0 0.3rem;
   font-weight: bold;
+  padding: 1rem 1.6rem;
 }
 
 .phobGCC{
-  padding: 1rem 1.6rem;
   background-color: rgb(104, 0, 0) ;
 }
 
-.standardGCC{
-  padding: 1rem;
+.oemGCC{
   background-color: rgb(1, 22, 117) 
 }
 
@@ -541,6 +540,7 @@ li{
 
 .modListContainer{
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .modListItem{
@@ -555,11 +555,19 @@ li{
 
 .modListFeature{
   width: 90%;
+  padding-right: 0.3rem;
+}
+
+.oemOnly{
+  font-size:0.8rem;
+  font-weight: bold;
+  color:lightgreen;
 }
 
 .modListPrice{
-  width: 17.5%;
+  width: 22.5%;
 }
+
 /* ~~~~ FAQ ~~~~ */
 
 .FAQBody {
@@ -662,7 +670,7 @@ li{
   }
   
   .modListPrice {
-      width: 15%;
+      width: 20%;
     }
 }
 
@@ -719,8 +727,11 @@ li{
     width: 50%;
   }
 
+  .modListContainer span{
+    font-size: 0.9rem;
+  }
   .modListPrice{
-    width: 11%;
+    width: 15%;
   }
 }
 

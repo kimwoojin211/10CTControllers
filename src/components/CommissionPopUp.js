@@ -28,10 +28,10 @@ function CommissionPopUp(props){
           </a>
           <a
             href="https://forms.gle/eU3eYAq7BWymBMR76"
-            className="button standardGCC"
+            className="button oemGCC"
             onClick={(e) => handleClick(e)}
           >
-            Standard GCC
+            OEM GCC
           </a>
         </div>
       </div>

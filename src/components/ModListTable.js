@@ -9,7 +9,7 @@ function ModListTable(props){
             props.modListArray.map((modification,index) => (
               <div className="modListItem row">
                 <div className="modListFeature">
-                  <span>{modification.feature}</span>
+                  <span>{modification.feature}</span> {modification.oem && (<span className="oemOnly">(OEM only)</span>)}
                 </div>
                 <div className="modListPrice">
                   <span>{modification.price}</span>

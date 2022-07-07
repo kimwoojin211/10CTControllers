@@ -6,16 +6,13 @@ import discordLogo from '../img/logos/discordLogo.png';
 
 function Header(props){
   const {onCommissionClicked} = props; 
-  const [activeId, setActiveId] = useState(1);
+  const [activeId, setActiveId] = useState(0);
   console.log(`active id: ${activeId}`)
   const navArray = [
     { id: 1, text: "Premades" },
     { id: 2, text: "ModList" },
     { id: 3, text: "FAQ" }
   ];
-
-  function separateWords(){
-  }
 
   return (
     <nav className="nav row">
