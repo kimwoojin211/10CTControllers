@@ -93,7 +93,7 @@ function FAQ(){
               <h2 className="FAQQuestion">About me.</h2>
             </div>
             <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===1) ? 'block':'none'}}>
-              <ul><li>I am a controller modder based locally in SoCal. I started modding in October 2020 by providing controllers for Asashi, current SoCal PR#17, and have since provided controllers to more players of the SoCal region, including PR'ed players such as Suf, Casper, Venelox, Franz, and Squid.</li>
+              <ul><li>I am a controller modder based locally in SoCal. I started modding in October 2020 by providing controllers for Asashi (current ranked #13 in Socal's PR) and have since provided controllers to more players of the SoCal region, including PR'ed players such as Suf, Casper, Venelox, Franz, and Squid.</li>
               <li>I pride myself on providing an affordable, speedy service, and my goal is to get more tournament-level controllers into more people's hands. At the moment, I try to make just enough money to get by, while working just enough so that I can still focus on university.</li>
               <li>Other than wanting to provide more affordable controllers, the biggest thing that I want for the community is <b>better knowledge about their controllers</b>. Therefore, I encourage anybody and everybody to ask me about controller related topics regarding Super Smash Bros. Melee.</li></ul>
               {/* <ul><li><p className="FAQAnswer">I am a controller modder based in SoCal that started in October of 2020 and started providing controllers to current #17th SoCal PRed player Asashi. Since then I’ve provided controllers to a lot more of the SoCal PR such as Suf, Casper, Venelox, Franz, and Squid. I pride myself on controller modding on trying to provide an affordable and speedy service and trying to get more tournament level controllers in more peoples hands. I try to make just enough money to get by and work enough that I can still focus on university. Other than wanting to provide more affordable controllers, the biggest thing that I want to provide to the community is better knowledge about their controllers and therefore I encourage anybody and everybody to ask me about controller related topics regarding Super Smash Bros. Melee.</p></li></ul> */}
@@ -101,9 +101,21 @@ function FAQ(){
           </div>
           <div className="FAQListItemContainer" key={2}>
             <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,2)} id='q2'>
-              <h2 className="FAQQuestion">What are potentiometers, and what is PODE?</h2>
+              <h2 className="FAQQuestion">How will the controllers be shipped?</h2>
             </div>
             <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===2) ? 'block':'none'}}>
+              <ul>
+                <li>Domestic shipping is done through USPS or UPS and takes anywhere from 2-5 business days depending on location.</li>
+                <li>International shipping will typically cost ~$20 and typically takes ~1-3 weeks for delivery. </li>
+                <li>Please contact me directly for more details.</li>
+              </ul>
+            </div>
+          </div>
+          <div className="FAQListItemContainer" key={3}>
+            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,3)} id='q3'>
+              <h2 className="FAQQuestion">What are potentiometers, and what is PODE?</h2>
+            </div>
+            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===3) ? 'block':'none'}}>
               <img src={Potentiometer} className="FAQimg img--med" alt="Potentiometer" />
               <ul>
                 <li>Potentiometers are these black readers that read the potential inputs that can be performed on a controller’s stickbox. Due to <b>PODE</b> (<b>P</b>otentiometer <b>O</b>ddity <b>D</b>egradation <b>E</b>ffect), controllers can both suffer and benefit from degraded signals from these potentiometers for easier performance of advanced tech.</li>
@@ -119,21 +131,21 @@ function FAQ(){
               </ul>
             </div>
           </div>
-          <div className="FAQListItemContainer" key={3}>
-            <div className="FAQQuestionWrapper"  onClick={(ev) => handleFAQClick(ev,3)} id='q3'>
+          <div className="FAQListItemContainer" key={4}>
+            <div className="FAQQuestionWrapper"  onClick={(ev) => handleFAQClick(ev,4)} id='q4'>
               <h2 className="FAQQuestion">What PODE is typically good to find in controllers?</h2>
             </div>
-            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===3) ? 'block':'none'}}>
+            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===4) ? 'block':'none'}}>
               <ul><li>The PODE that one would want differs from player to player, but I believe the best general PODE for most people is <b>NO</b> PODE, which has high snapback but also high pivots. </li>
               <li>The snapback that occurs on 0 PODE controllers are simply removed with the installation of capacitors on the potentiometers to prevent snapback, but retain pivots.</li>
               <li>0 PODE also typically makes dashback out of crouch feel really good in comparison to controllers that have PODE.</li></ul>
             </div>
           </div> 
-          <div className="FAQListItemContainer" key={4}>
-            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,4)} id='q4'>
+          <div className="FAQListItemContainer" key={5}>
+            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,5)} id='q5'>
               <h2 className="FAQQuestion">Why does my controller’s dashes feel weird / unresponsive??</h2>
             </div>
-            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===4) ? 'block':'none'}}>
+            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===5) ? 'block':'none'}}>
               <ul><li>The likely scenario is that your controller has developed some amount of PODE, which, combined with capacitance from snapback capacitors, can make a controller feel unresponsive.</li>
               <li>Essentially what happens is:
                 <ul>
@@ -147,22 +159,22 @@ function FAQ(){
               </ul>
             </div>
           </div>
-          <div className="FAQListItemContainer" key={5}>
-            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,5)} id='q5'>
+          <div className="FAQListItemContainer" key={6}>
+            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,6)} id='q6'>
               <h2 className="FAQQuestion">My controller is drifting when I plug it in!</h2>
             </div>
-            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===5) ? 'block':'none'}}>
+            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===6) ? 'block':'none'}}>
                 <ul>
                   <li>You likely have had basic snapback capacitors installed into your controller. Perform a soft reset by holding <b>X</b>+<b>Y</b>+<b>Start</b> for 2 seconds, and press any button on your controller to reconnect it. </li>
                 </ul>
                   <p><b>Note:</b> This only needs to be done on console, or, for Smash Ultimate, on third party adapters.</p>
             </div>
           </div>
-          <div className="FAQListItemContainer" key={6}>
-            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,6)} id='q6'>
+          <div className="FAQListItemContainer" key={7}>
+            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,7)} id='q7'>
               <h2 className="FAQQuestion">Why do controllers cost this much????</h2>
             </div>
-            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===6) ? 'block':'none'}}>
+            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===7) ? 'block':'none'}}>
 
                 <ul>
                   <li>On average, a full controller build will likely take around 3 to 4 cumulative hours of labor.</li>
@@ -181,11 +193,11 @@ function FAQ(){
 
             </div>
           </div>
-          <div className="FAQListItemContainer" key={7}>
-            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,7)} id='q7'>
+          <div className="FAQListItemContainer" key={8}>
+            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,8)} id='q8'>
               <h2 className="FAQQuestion">What kind of controller do you recommend?</h2>
             </div>
-            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===7) ? 'block':'none'}}>
+            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===8) ? 'block':'none'}}>
               <ul>
                 <li>In general:</li>
                   <ul>
@@ -223,12 +235,11 @@ function FAQ(){
               </ul>
             </div>
           </div>
-        
-          <div className="FAQListItemContainer" key={8}>
-            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,8)} id='q8'>
+          <div className="FAQListItemContainer" key={9}>
+            <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,9)} id='q9'>
               <h2 className="FAQQuestion">I'm on a budget. What controller should I get?</h2>
             </div>
-            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===8) ? 'block':'none'}}>
+            <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===9) ? 'block':'none'}}>
               <ul>
                 <li>For a build closer to $100:</li>
               </ul>
