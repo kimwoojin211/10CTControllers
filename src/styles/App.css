@@ -78,6 +78,7 @@ li{
 }
 
 .pageBody{
+  height:100%;
   margin: 1.5rem auto;
 }
 
@@ -481,6 +482,17 @@ li{
 
 /* ~~~~ Premades ~~~~ */
 
+.noPremades{
+  width:80%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 20vh;
+  background: rgba(255,255,255,0.9);
+  padding: 1rem 1.5rem;
+  border-radius: 3rem;
+  color: black;
+}
+
 .premadeControllerContainer{
   border:1px solid white;
   width:80%;
@@ -573,7 +585,7 @@ li{
   width: 22.5%;
 }
 
-.popupContainer{
+.modListTooltipContainer{
   max-width: 130px;
   display:flex;
   flex-direction: column;
@@ -581,13 +593,13 @@ li{
   /* border: 1px solid red; */
 }
 
-.popupContainer img{
+.modListTooltipContainer img{
   margin-bottom: 0.4rem;
   min-width: 125px;
   min-height: 125px;
 }
 
-.popupContainer span{
+.modListTooltipContainer span{
   color: black;
   font-size: 0.7rem;
 }
@@ -764,17 +776,17 @@ li{
     width: 15%;
   }
 
-  .popupContainer{
+  .modListTooltipContainer{
     flex-direction: row;
     max-width: 320px;
   }
 
-  .popupContainer img{
+  .modListTooltipContainer img{
     margin-bottom: 0;
     margin-right: 0.5rem;
   }
 
-  .popupContainer>span{
+  .modListTooltipContainer>span{
     font-size:0.8rem;
   }
 }
@@ -881,11 +893,11 @@ li{
       width: 10%;
     }
 
-  .popupContainer{
+  .modListTooltipContainer{
     max-width: 520px;
   }
 
-  .popupContainer>span {
+  .modListTooltipContainer>span {
     font-size: 0.9rem;
     }
 

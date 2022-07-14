@@ -9,7 +9,7 @@ function PremadeController(props){
         <img className="premadeImg" src={props.premadeImgURL} alt="Premade Controller 1"/>
       </div>
       <div className="premadeInfoContainer">
-        <h2>Specs:</h2>
+        <h1>Specs:</h1>
         <div className="premadeSpecsWrapper">
           <ul className="premadeSpecs">
             {

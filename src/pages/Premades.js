@@ -44,9 +44,11 @@ function Premades(){
       {/* <div>
         <img src={titleImg} className="titleimg" alt="fox shine stencil"/>
       </div> */}
-        <h1 className="pageTitle">PREMADES</h1>
+      <h1 className="pageTitle">PREMADES</h1>
       <div className="pageBody">
-        {
+
+        <h2 className="noPremades"> No premade controllers available at this time. <br/>Please check back later.</h2>
+        {/* {
           premadeList.map((premade,index) =>
             <PremadeController
               id={index}
@@ -55,7 +57,7 @@ function Premades(){
               premadePrice={premade.price}
               />
           )
-        }
+        } */}
       {/* <PremadeController 
         premadeImgURL={premadeImg1}
         premadeSpecList={speclist1}
