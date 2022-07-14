@@ -62,6 +62,11 @@ li{
   height:69px;
 }
 
+.img--lrg{
+  width: 125px;
+  height:125px;
+}
+
 .container{
   width:80%;
   margin: 0 auto;
@@ -568,6 +573,30 @@ li{
   width: 22.5%;
 }
 
+.popupContainer{
+  max-width: 130px;
+  display:flex;
+  flex-direction: column;
+  opacity:1;
+  /* border: 1px solid red; */
+}
+
+.popupContainer img{
+  margin-bottom: 0.4rem;
+  min-width: 125px;
+  min-height: 125px;
+}
+
+.popupContainer span{
+  color: black;
+  font-size: 0.7rem;
+}
+
+.__react_component_tooltip.show{
+  opacity:1 !important;
+  padding: 0.4rem !important;
+}
+
 /* ~~~~ FAQ ~~~~ */
 
 .FAQBody {
@@ -727,11 +756,26 @@ li{
     width: 50%;
   }
 
-  .modListContainer span{
+  .modListFeature>span{
     font-size: 0.9rem;
   }
+
   .modListPrice{
     width: 15%;
+  }
+
+  .popupContainer{
+    flex-direction: row;
+    max-width: 320px;
+  }
+
+  .popupContainer img{
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+  }
+
+  .popupContainer>span{
+    font-size:0.8rem;
   }
 }
 
@@ -835,6 +879,14 @@ li{
 
   .modListPrice {
       width: 10%;
+    }
+
+  .popupContainer{
+    max-width: 520px;
+  }
+
+  .popupContainer>span {
+    font-size: 0.9rem;
     }
 
   .FAQList li{
