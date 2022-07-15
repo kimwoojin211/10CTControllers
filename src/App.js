@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Premades from "./pages/Premades";
 import ModList from "./pages/ModList";
@@ -17,7 +17,7 @@ function App() {
   
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter basename="/">
       {
         commissionClicked && <CommissionPopUp onCommissionClicked={handleCommissionClick}/>
       }
@@ -32,7 +32,7 @@ function App() {
             <Route path="/FAQ" element={<FAQ />} />
           </Routes>
         </main>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
