@@ -17,7 +17,7 @@ import WavedashNotches from "../img/FAQ&ModList/wavedashnotches.png";
 import SouthlessNotches from "../img/FAQ&ModList/southlessnotches.png";
 import FullNotches from "../img/FAQ&ModList/fullnotches.png";
 import Stickbox from "../img/FAQ&ModList/stickbox.jpg";
-import Potentiometers from "../img/FAQ&ModList/potentiometers.png";
+import Potentiometers from "../img/FAQ&ModList/potentiometers.jpg";
 import SnapbackCapacitor from "../img/FAQ&ModList/snapbackcap.jpg";
 import SnapbackModule from "../img/FAQ&ModList/snapback.png";
 import HardZ from "../img/FAQ&ModList/hardZ.jpg";
@@ -26,6 +26,8 @@ import Paracord from "../img/FAQ&ModList/paracord.jpg";
 import CutSprings from "../img/FAQ&ModList/cutsprings.jpg";
 import TriggerLube from "../img/FAQ&ModList/3M.png";
 import Springless from "../img/FAQ&ModList/springless.jpg";
+import AnnealedSpring from "../img/FAQ&ModList/annealedspring.jpg";
+import NoRumble from "../img/FAQ&ModList/norumble.jpg";
 
 //  {feature:"", price:""},
 
@@ -51,18 +53,18 @@ const notchArray= [
 ];
 
 const miscArray = [
-  { feature: "Stickbox Replacement", price: "$5", image: Stickbox, description:"Replaces the box that provides control for either the analog stick or the C-stick.",oem: true },
-  { feature: "Potentiometer Replacement", price: "$20", image: Potentiometers, description: "Same potentiometers as original manufacture. Refer to the PODE section in the FAQ for more info.", oem: true },
+  { feature: "Stickbox Replacement", price: "$5", image: Stickbox, description:"Replaces the stickbox, the part that provides control for either the analog stick or the C-stick, with a new T3 stickbox.",oem: true },
+  { feature: "Potentiometer Replacement", price: "$20", image: Potentiometers, description: "Replaces the potentiometer with new Noble potentiometers, the same brand as originally manufactured. Refer to the PODE section in the FAQ for more info on potentiometers.", oem: true },
   { feature: "Snapback Capacitors", price: "$5/axis", image: SnapbackCapacitor, description:"Removes Snapback. 1 capacitor handles one of the X/Y axis, 2 capacitors are required for both.", oem: true },
-  { feature: "Adjustable No-Reset Snapback Module", price: "$25", image: SnapbackModule, description: "Upgraded versions of basic snapback capacitors.", oem: true },
+  { feature: "Adjustable No-Reset Snapback Module", price: "$25", image: SnapbackModule, description: "Upgraded versions of the basic snapback capacitors.", oem: true },
   { feature: "Hard Tactile Z button", price: "$8", image: HardZ, description: "Replaces the Z button with a third-party button that audibly clicks and requires slightly more force to press."},
   { feature: "Soft Tactile Z button", price: "$10", image: SoftZ, description: "Replaces the Z button a clicky button from a Wii Classic Controller. The amount of force needed to press down is roughly the same."},
   { feature: "Paracord Cable", price: "$35", image: Paracord, description:"Removal of the original cable rubber and replaced with a 550 paracord which tangles less and is easier to untangle. Multiple colors available."},
   { feature: "Cut Springs", price: "$3", image: CutSprings, description: "Springs inside L/R buttons are cut, reducing the tension and force required to push down." },
   { feature: "Lubed Triggers", price: "$5", image: TriggerLube, description:"3M Lube applied to the tube of the trigger and the trigger spring for less resistance."},
-  { feature: "Annealed Springs", price: "$5" },
-  { feature: "Remove L/R/Z Spring", price: "Free" },
-  { feature: "Remove Rumble Pack", price: "Free" },
+  { feature: "Annealed Springs", price: "$5", image: AnnealedSpring, description: "L/R/Z springs are fire treated to make the springs rattle less and a little softer to press." },
+  { feature: "Remove L/R/Z Spring", price: "Free", image: Springless, description: "Removing L/R springs removes all tension needed to press down and completely disables the analog input for the L/R button. Removing the Z spring removes the angled press of the button, making the Z input more evenly activated wherever the button is pushed." },
+  { feature: "Remove Rumble Pack", price: "Free", image: NoRumble, description: "Removes the rumble motor pack within the gamecube controller, making the controller noticeably lighter." },
 ];
 
 // const modListArray = [
