@@ -1,6 +1,6 @@
 {
-  "name": "10ctcontrollers",
   "homepage": "https://kimwoojin211.github.io/10CTControllers",
+  "name": "10ctcontrollers",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
