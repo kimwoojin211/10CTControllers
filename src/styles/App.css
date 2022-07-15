@@ -1,0 +1,876 @@
+/* ~~~~ Globals ~~~~ */
+
+html{
+  font-size: 16px;
+}
+
+*{
+  box-sizing: border-box;
+  color:white;
+}
+
+h1, h2, h3, h4, h5{
+  text-align: center;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.1rem;
+}
+
+h5{
+  font-size:0.95rem;
+}
+
+a, p, span{
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+ul{
+  padding-inline-start: 1rem;
+}
+
+li{
+  font-size: 0.8rem;
+  margin: 0.6rem auto;
+}
+
+.row{
+  display: flex;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  margin: 0;
+}
+
+.img--small{
+  width:22px;
+  height:22px;
+}
+
+.img--med{
+  width:69px;
+  height:69px;
+}
+
+.img--lrg{
+  width: 125px;
+  height:125px;
+}
+
+.container{
+  width:80%;
+  margin: 0 auto;
+  /* border:1px solid red; */
+}
+
+.pageTitle{
+  margin: 0.5rem 0;
+}
+
+.pageBody{
+  margin: 1.5rem auto;
+}
+
+.pageNote{
+  margin:0.2rem auto;
+  font-size: 0.8rem;
+}
+
+.button{
+  padding: 0.5em;
+  border-radius: 1em;
+  text-align: center;
+  text-decoration: none;
+}
+/* 
+.titleimg{
+  position: absolute;
+  left:0;
+  transform: translateX(150%);
+  width:50px;
+  height:50px;
+  z-index:-1;
+} */
+
+.bg{
+  width:100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.fullPageOverlay{
+  position:fixed;
+  height:100vh;
+  width:100vw;
+  background-color: rgba(0,0,0,0.85);
+  z-index:5;
+}
+
+/* ~~~~ Header ~~~~ */
+
+.nav{
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 0.3rem;
+  background:transparent;
+}
+
+.navHome, .navHome img{
+  width:64px;
+  height:64px;
+}
+
+.navRoutesList{
+  margin: 0 auto;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.navListItem{
+  border-bottom: 1px solid white;
+}
+
+.navListItem + .navListItem{
+  margin-left: 3vw;
+}
+
+.navLinks{
+  align-self:flex-end;
+}
+
+.navCommission {
+  background: white;
+  color: black;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  margin:0;
+}
+
+.navContacts{
+  justify-content: flex-end;
+  margin-top: 0.2rem;
+}
+
+.navDiscord {
+  /*color: #988be0;*/
+}
+
+.navTwitter {
+  /*color: #249CEA;*/
+  padding-left: .4rem;
+  padding-right: .2rem;
+}
+
+.navListItem:hover, .navListItem.navActive{
+  text-shadow: 0px 0px 1px white,
+  0px 0px 5px white,
+  0px 0px 10px white,
+  0px 0px 15px white,
+  0px 0px 20px white;
+}
+
+.navCommission:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 1px white,
+    0px 0px 5px white,
+    0px 0px 10px white,
+    0px 0px 13px white;
+}
+
+/* ~~~~ CommissionPopUp ~~~~ */
+
+.commissionOverlay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commissionContainer{
+  position: relative;
+  width:90%;
+  max-width:691.2px;
+  background: rgba(41, 203, 181, 0.658);
+  padding: 1.5rem 0.3rem;
+  border-radius: 10px;
+  border: 5px groove white;
+}
+
+.commissionContainer h2{
+  width:95%;
+  margin: 0 auto 1rem auto;
+  color: white;
+  text-align:center;
+}
+
+.closeButton{
+  position: absolute;
+  /* float:right; */
+  top:0;
+  right: 0;
+  margin: 0;    
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: black;
+  background:white;
+  border: 3px solid grey;
+  border-radius: 50%;
+  padding: 0.1rem 0.4rem;
+  transform: translate(1rem,-1rem);
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.commissionButtonContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commissionButtonContainer .button{
+  color: white;
+  border-radius:60px;
+  font-size: 0.9rem;
+  margin: 0 0.3rem;
+  font-weight: bold;
+  padding: 1rem 1.6rem;
+}
+
+.phobGCC{
+  background-color: rgb(104, 0, 0) ;
+}
+
+.oemGCC{
+  background-color: rgb(1, 22, 117) 
+}
+
+/* ~~~~~~~~~ Home ~~~~~~~~~~~ */
+
+/* ~~~~ Hero ~~~~ */
+
+.each-fade{
+  height: calc(100vh - 90px);
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.sliderBackground{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.8);
+}
+
+.heroText {
+  text-align: center;
+  align-self: center;  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+}
+
+.heroTitle{
+  margin: 0;
+  text-shadow: 3px 4px 3px rgb(122, 122, 122),
+  0px 0px 1px rgb(122, 122, 122),
+  0px 0px 5px rgb(122, 122, 122),
+  0px 0px 10px rgb(122, 122, 122),
+  0px 0px 15px rgb(122, 122, 122),
+  0px 0px 25px rgb(122, 122, 122),
+  0px 0px 30px rgb(122, 122, 122);
+  /* border: 1px solid violet; */
+}
+
+.heroSubtitle{
+  margin: 0;
+  /* border: 1px solid yellow; */
+}
+
+/* ~~~~ Home Content ~~~~ */
+
+.pastClientsContainer {
+  /* border: 1px solid yellow; */
+  /* background: linear-gradient(0deg, rgb(0,0,0) 64%, rgb(0, 10, 53) 71%); */
+  background: linear-gradient(225deg, rgba(75, 0, 0, 1) 12%, rgba(0, 7, 37, 1) 48%, rgba(75, 0, 0, 1) 100%);
+  padding-bottom: 1.6rem;
+
+}
+
+.pastClientsContainer p {
+  font-weight: bold;
+}
+
+.pastClientsContainer h2{
+  align-self: center;
+}
+
+.contentTitle {
+  margin-top:1.6rem;
+}
+
+.playerList {
+  width: 100%;
+  height:100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 1.4rem;
+  /* border: 1px solid yellow; */
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.4rem 0.3rem;
+}
+
+.playerPic {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.playerTag {
+  margin: 0.8rem 0;
+  font-weight: bold;
+}
+
+.andMore{
+  text-align:center;
+  margin-top: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* ~~~~ CTA ~~~~ */
+
+.CTA{
+  background: rgb(18, 21, 37);
+  height:100%;
+  margin: auto;
+  /* border:1px solid red; */
+  /* background: linear-gradient(225deg, rgba(75, 0, 0, 1) 12%, rgba(0,7,37,1) 49%, rgba(75,0,0,1) 100%); */
+}
+
+.CTAContent{
+  height:100%;
+  margin:1rem auto;
+}
+
+.CTAContent .button{
+  width: 80%;
+  font-weight:bold;
+  font-size:0.8rem;
+  text-align:center;
+  margin: 0.5rem auto;
+  padding: 0.75em;
+  max-width: 250px;
+}
+
+.CTAContent h4{
+  margin: 0.5rem auto 1rem auto;
+}
+
+.CTAContent ul{
+  margin-top:0;
+  padding-inline-start: 1rem;
+}
+
+.CTAContent li{
+  width:85%;
+  margin:0.6rem auto;
+}
+
+.CTAContent a{
+  text-decoration: none;
+}
+
+.CTATitle{
+  font-size: 1rem;
+  margin: 1rem auto;
+}
+
+.CTAOptions{
+  margin:0 auto;
+  width:100%;
+}
+
+.CTACommission{
+  background: #E5E4E2;
+  color:black;
+}
+
+.CTACommissionPhobGCC{
+  background-color: #0f5a5e ;
+  color: white;
+}
+
+.CTAModList{
+  background: rgb(69, 80, 149);
+
+}
+
+.CTAPremades{
+  background: white;
+  color: black;
+}
+
+.CTAFAQ{
+  color:orange
+}
+
+.CTATwitter{
+  color: #249CEA;
+}
+
+.CTADiscord{
+  color: #988be0;
+}
+
+
+/* ~~~~ Testimonials ~~~~ */
+
+.testimonialContainer{
+  width:300px;
+  margin:0 auto;
+}
+
+.tweetWrapper{
+  display:flex;
+  justify-content:center;
+  margin:0 auto;
+  height:447px;
+  /* transform:scale(0.86) translateY(-10%); */
+  overflow:hidden;
+
+}
+
+.tweets{
+  margin:0 auto;
+  margin-bottom: 2rem;
+}
+
+.react-slideshow-wrapper.slide{
+  width:300px;
+  margin:0 auto;
+}
+
+/* ~~~~ Premades ~~~~ */
+
+.premadeControllerContainer{
+  border:1px solid white;
+  width:80%;
+  margin: 0 auto 2rem auto;
+  display:flex;
+  max-width:425px;
+  flex-direction:column;
+}
+
+.premadeImgWrapper{
+  width:100%;
+  height:100%;
+  padding: 2em;
+}
+
+.premadeImg{
+  width:100%;
+  max-width:250px;
+  height:100%;
+  border:1px solid rgb(144, 168, 176);
+}
+
+.premadeInfoContainer{
+  /* width:50 */
+  width:100%;
+  border:1px solid white;
+  text-align: center;
+  margin: 0;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.premadeInfoContainer h2 {
+  margin: 1.25rem 0 0 0;
+}
+
+.premadeSpecs{
+  margin-block-start: 1.5em;
+  padding-inline-start: 15%;
+  margin-right: 1rem; 
+  margin-bottom: 0rem;
+  text-align: left;
+  line-height:1.5;
+  font-size:0.9rem;
+}
+
+.premadePrice{
+  margin: 0 0 1.5rem 0;
+}
+
+/* ~~~~ Mod List ~~~~ */
+
+.modListBody{
+  max-width:600px;
+}
+
+.modListTitle{
+  text-align: left;
+  margin: 0.4rem 0;
+}
+
+.modListContainer{
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.modListItem{
+  justify-content: space-between;
+}
+
+.modListItem > div{
+  border: 1px solid gray;
+  padding-left: 0.35rem;
+  padding-bottom: 0.15rem;
+}
+
+.modListFeature{
+  width: 90%;
+  padding-right: 0.3rem;
+}
+
+.oemOnly{
+  font-size:0.8rem;
+  font-weight: bold;
+  color:lightgreen;
+}
+
+.modListPrice{
+  width: 22.5%;
+}
+
+.popupContainer{
+  display:flex;
+  flex-wrap: wrap;
+  opacity:1;
+}
+
+.popupContainer span{
+  color: black;
+  font-size: 0.7rem;
+}
+
+.__react_component_tooltip.show{
+  opacity:1;
+}
+
+/* ~~~~ FAQ ~~~~ */
+
+.FAQBody {
+  max-width: 900px;
+}
+
+.FAQList{
+  max-width:900px;
+  margin: 0 auto;
+}
+
+.FAQListItemContainer{
+  margin: 0;
+}
+
+.FAQQuestionWrapper{
+  border:1px solid grey;
+}
+
+.FAQQuestion{
+  background:white;
+  padding: 0.5em 0.6em;
+  color: black;
+  margin:0;
+}
+
+.FAQAnswerWrapper{
+  position:relative;
+  width:95%;
+  margin:0 auto 0.5em auto;
+  padding:0.5em 1em;
+  border:1px solid grey;
+  border-radius:10px;
+  transform: translateY(-10px);
+  z-index:-1;
+}
+
+.FAQimg{
+  float:right;
+  margin: 1.3rem 0 0 0.7rem;
+}
+
+.FAQCard{
+  border:1px solid grey;
+  font-size: 0.8rem;
+}
+
+.FAQCardRow>div{
+  padding:0.3rem;
+}
+
+.FAQCardPrice{
+  min-width: 55px;
+  border-right: 1px solid grey;
+}
+
+
+.FAQCardRow{
+  border-bottom: 1px solid grey;
+}
+
+
+@media only screen and (min-width:375px) {
+  a, p{
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  h2{
+    font-size: 1.24rem;
+  }
+
+  h5{
+    font-size: 1rem;
+  }
+
+  .commissionButtonContainer .button {
+    margin: 0 1rem;
+
+  }
+
+  .navHome, .navHome img{
+    width:75px;
+    height:75px;
+  }
+
+  .navListItem + .navListItem{
+    margin-left: 1rem;
+  }
+
+  .navCommission{
+    font-size: 0.85rem;
+  }
+
+  .playerList{
+    max-width: 310px;
+  }
+  
+  .modListPrice {
+      width: 20%;
+    }
+}
+
+@media only screen and (min-width:480px) {
+
+  p{
+    font-size:1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .img--med {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sliderBackground {
+    width: 100%;
+    transform:none;
+    object-fit: cover;
+  }
+
+  .commissionButtonContainer .button{
+    font-size: 1rem;
+    margin: 0 2rem;
+  }
+
+  .premadeInfoContainer h2{
+    font-size: 2rem;
+  }
+  
+  .premadeSpecs{
+    font-size:1rem;
+    line-height: 1.75;
+  }
+
+  .pastClientsContainer{
+    padding: 3.5rem 0;
+  }
+
+  .pastClientsContainer > .container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .pastClientsContainer .contentTitle{
+    width: 43%;
+    line-height:1.5;
+  }
+
+  .pastClients{
+    width: 50%;
+  }
+
+  .modListContainer span{
+    font-size: 0.9rem;
+  }
+  .modListPrice{
+    width: 15%;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  a{
+    font-size: 1rem;
+  }
+  
+  h1{
+    font-size:4rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .bg{
+    transform: translateX(6%);
+  }
+
+  .navHome, .navHome img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .navListItem + .navListItem{
+    margin-left: 1.3rem;
+  }
+
+  .img--med {
+    width: 100px;
+    height: 100px;
+  }
+
+  .playerList {
+    max-width: 430px;
+  }
+
+  .CTA {
+    height: 275px;
+    flex-direction: row;
+  }
+
+  .CTAContent {
+    margin: 0 auto;
+    border: 1px solid grey;
+  }
+
+  .CTAContent .button {
+    font-size: 0.8rem;
+  }
+
+  .CTATitle {
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+
+  .CTAOptions {
+    /* width: 85%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; */
+  }
+
+  .CTAOptions>* {
+    width: 28%;
+  }
+
+  .CTACommission.button {
+    /* margin: 1.8rem auto; */
+    width: 70%;
+  }
+
+  .premadeControllerContainer {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+  }
+  
+  .premadeImgWrapper {
+    margin: auto 0;
+    width: 45%;
+  }
+  
+  .premadeImg {
+    max-width: 500px;
+  }
+
+  .premadeInfoContainer{
+    width:55%;
+  }
+
+  .premadeInfoContainer h2 {
+    font-size: 2.7rem;
+  }
+  
+  .premadeSpecs {
+    font-size: 1.4rem;
+    line-height: 1.75;
+  }
+
+  .modListPrice {
+      width: 10%;
+    }
+
+  .FAQList li{
+    font-size: 1rem;
+  }
+  
+  .FAQCard{
+    font-size: 1rem;
+  }
+
+  .FAQCardPrice{
+    min-width: 75px;
+  }
+
+  .FAQCardRow > .FAQCardMod{
+    padding-left: 0.8rem;
+
+  }
+}
