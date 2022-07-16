@@ -66,10 +66,9 @@ function Home(){
             <Link to="/ModList" className="CTAModList button">
               Click here for a full list of mods and their prices.
             </Link>
-            <Link to="/Premades" className="CTAPremades button">
-              Click here for a list of premade modded controllers, available for
-              order.{" "}
-            </Link>
+            <a className="CTAShop button" href="https://in10city.bigcartel.com">
+              Click here to check out the controllers in my Big Cartel shop, all modded and ready for delivery.{" "}
+            </a>
           </div>
         </div>
         <div className="CTAContent container col">

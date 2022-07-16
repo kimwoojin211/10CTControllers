@@ -45,11 +45,11 @@ const colorArray = [
 ];
 
 const notchArray= [
-  {feature:"Shield Drop Notches (non-UCF)", price:"$15", image: ShielddropNotches, description: "Helps execute shield drops more consistently. ",oem: true}, 
-  {feature:"Wavedash Notches", price:"$40", image: WavedashNotches, description: " Allows for maximum wavedashes and a couple of firefox angles."},
-  {feature:"Shield Drop + Wavedash Hybrid Notches (non-UCF)", price:"$45", image: HybridNotches, description: "Combination of Shield drop & Wavedash notches. Refer to each mod's description for their respective details.", oem: true}, 
-  {feature:"Southless Firefox Angles", image: SouthlessNotches, price:"$90", description: "Allow for max firefox angles near the north, west, and east cardinals, as well as max wavedash and shield drops."}, 
-  {feature:"Full Firefox Gate / Hybrid Gate", image: FullNotches, price:"$100", description: "Notches near every cardinal direction. Allow for max firefox angles, max and min wavedash angles, and shield drops."}, 
+  {feature:"Shield Drop Notches (non-UCF)", price:"$15", image: ShielddropNotches, description: "Helps execute shield drops more consistently. Location of notches indicated by the red circles.",oem: true}, 
+  {feature:"Wavedash Notches", price:"$40", image: WavedashNotches, description: "Allows for maximum wavedashes and a couple of firefox angles. Location of notches indicated by the red circles."},
+  {feature:"Shield Drop + Wavedash Hybrid Notches (non-UCF)", price:"$45", image: HybridNotches, description: "Combination of Shield drop & Wavedash notches. Refer to each mod's description for their respective details. Location of notches indicated by the red circles.", oem: true}, 
+  {feature:"Southless Firefox Angles", image: SouthlessNotches, price:"$90", description: "Allow for max firefox angles near the north, west, and east cardinals, as well as max wavedash and shield drops. Location of notches indicated by the red circles."}, 
+  {feature:"Full Firefox Gate / Hybrid Gate", image: FullNotches, price:"$100", description: "Notches near every cardinal direction. Allow for max firefox angles, max and min wavedash angles, and shield drops. Location of notches indicated by the red circles."}, 
 ];
 
 const miscArray = [
@@ -101,10 +101,10 @@ function ModList(){
   return(
     <React.Fragment>
       {/* <img src={backgroundImg} className="bg" alt="falco laser background"/> */}
-      <h1 className="pageTitle">MOD LIST</h1>
       <div className="pageBody modListBody container">
+        <h1 className="pageTitle">MOD LIST</h1>
         {/* <p className="pageNote"><i>Domestic shipping done through USPS or UPS. International shipping is typically ~$20 and takes ~1-3 weeks. Please contact me for more details.</i></p> */}
-        <p className="pageNote"><i>Hover over an item on the modlist to view an image and/or a description of the modification. </i></p>
+        <p className="pageNote"><i>Hover over (or press on mobile) an item on the modlist to view an image and/or a description of the modification. </i></p>
         <ModListTable
           tableTitle= "Base Controller Colors"
           tableId="color"

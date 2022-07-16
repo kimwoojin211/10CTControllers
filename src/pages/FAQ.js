@@ -18,9 +18,9 @@ function FAQ(){
 
   return(
     <React.Fragment>
-      <h1 className="pageTitle">FAQ</h1>
       {/* <h3 className="pageSubtitle">Click on a question to reveal an answer!</h3> */}
       <div className="pageBody FAQBody container">
+        <h1 className="pageTitle">FAQ</h1>
         <div className="FAQList">
           <div className="FAQListItemContainer" key={1}>
             <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,1)} id='q1'>
@@ -35,7 +35,7 @@ function FAQ(){
           </div>
           <div className="FAQListItemContainer" key={2}>
             <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,2)} id='q2'>
-              <h2 className="FAQQuestion">How will the controllers be shipped?</h2>
+              <h2 className="FAQQuestion">How are the controllers shipped?</h2>
             </div>
             <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===2) ? 'block':'none'}}>
               <ul>
@@ -51,7 +51,7 @@ function FAQ(){
             </div>
             <div className="FAQAnswerWrapper" style={{display: (selectedQuestion===3) ? 'block':'none'}}>
               <ul>
-                <li>The PhobGCC product is similar to the Goomwave’s project in that they both tackle the issue of PODE on the Gamecube Controller, in regards to how PODE has affected both positively and negatively in regular official Gamecube Controller motherboards. The Goomwave’s approach to PODE was to emulate good PODE using brand new potentiometers. The PhobGCC’s approach to PODE is to eliminate the P in PODE entirely, potentiometers. Instead, magnets are glued onto the stickbox and their polarity is read through hall effect sensors, essentially making a no-contact read of stickbox values. The contact made from potentiometer to stickbox is a big part of the reason PODE exists.</li>
+                <li>The PhobGCC product is similar to the Goomwave’s project in that they both tackle the issue of PODE on the Gamecube Controller, in regards to how PODE has affected both positively and negatively in regular official Gamecube Controller motherboards. However,the Goomwave’s approach to PODE was to emulate good PODE using brand new potentiometers. The PhobGCC’s approach to PODE is to eliminate the P in PODE entirely, potentiometers. Instead, magnets are glued onto the stickbox and their polarity is read through hall effect sensors, essentially making a no-contact read of stickbox values. The contact made from potentiometer to stickbox is a big part of the reason PODE exists.</li>
 
                 <li>There are QoL features on PhobGCCs that are very similar to the Goomwave such as X/Y to Z remap, Notch Recalibration, Trigger Modes, Rumble Adjustment, and most importantly, adjusting the feel of the controller. </li>
               </ul>

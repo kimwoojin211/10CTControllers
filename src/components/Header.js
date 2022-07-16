@@ -15,13 +15,13 @@ function Header(props){
   ];
 
   return (
-    <nav className="nav row">
+    <nav className="navbar row">
       <Link className="navHome" to="/" onClick={() => setActiveId(0)}>
         <img src={mainLogo} alt="10CT logo" />
       </Link>
       <div className="navRoutes row">
         <ul className="navRoutesList row">
-          {navArray.map((val, index) => (
+          {/* {navArray.map((val, index) => (
             <li
               className={
                 activeId === index + 1 ? "navListItem navActive" : "navListItem"
@@ -32,10 +32,10 @@ function Header(props){
                 {val.text.replace(/([A-Z]+)/g, " $1").trim()}
               </Link>
             </li>
-          ))}
-          {/* <li className="navListItem"><Link to="/Premades">Premades</Link></li>
+          ))} */}
           <li className="navListItem"><Link to="/ModList">Mod List</Link></li>
-          <li className="navListItem"><Link to="/FAQ">FAQ</Link></li> */}
+          <li className="navListItem"><Link to="/FAQ">FAQ</Link></li>
+          <a className="navListItem" href="https://in10city.bigcartel.com/">Shop</a>
         </ul>
       </div>
 

@@ -79,7 +79,7 @@ li{
 
 .pageBody{
   height:100%;
-  margin: 1.5rem auto;
+  margin: 90px auto 1rem auto;
 }
 
 .pageNote{
@@ -88,7 +88,7 @@ li{
 }
 
 .button{
-  padding: 0.5em;
+  padding: 0.4em 0.5em;
   border-radius: 1em;
   text-align: center;
   text-decoration: none;
@@ -120,11 +120,15 @@ li{
 
 /* ~~~~ Header ~~~~ */
 
-.nav{
+.navbar{
+  position:absolute;
+  top:0;
+  width:100%;
   align-items: center;
   justify-content: space-between;
   height: 90px;
   padding: 0 0.3rem;
+  z-index:4;
   background:transparent;
 }
 
@@ -141,6 +145,7 @@ li{
 
 .navListItem{
   border-bottom: 1px solid white;
+  margin: 0.6rem auto;
 }
 
 .navListItem + .navListItem{
@@ -261,7 +266,7 @@ li{
 /* ~~~~ Hero ~~~~ */
 
 .each-fade{
-  height: calc(100vh - 90px);
+  height: calc(100vh);
 }
 
 .image-container {
@@ -281,7 +286,7 @@ li{
   height:100%;
   top:0;
   left:0;
-  background:rgba(0,0,0,0.8);
+  background:rgba(0,0,0,0.9);
 }
 
 .heroText {
@@ -435,7 +440,7 @@ li{
 
 }
 
-.CTAPremades{
+.CTAShop{
   background: white;
   color: black;
 }
@@ -547,7 +552,7 @@ li{
 /* ~~~~ Mod List ~~~~ */
 
 .modListBody{
-  max-width:600px;
+  max-width:650px;
 }
 
 .modListTitle{
