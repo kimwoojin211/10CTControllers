@@ -35,7 +35,7 @@ function Header(props){
           ))} */}
           <li className="navListItem"><Link to="/ModList">Mod List</Link></li>
           <li className="navListItem"><Link to="/FAQ">FAQ</Link></li>
-          <a className="navListItem" href="https://in10city.bigcartel.com/">Shop</a>
+          <a className="navListItem" href="https://in10city.bigcartel.com/" target="_blank" rel="noopener noreferrer">Shop</a>
         </ul>
       </div>
 
