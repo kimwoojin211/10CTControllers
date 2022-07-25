@@ -84,7 +84,7 @@ function Home(){
             </li>
             <li>
               Join the{" "}
-              <a className="CTADiscord" href="https://discord.gg/EajRdDrR">
+              <a className="CTADiscord" href="https://discord.gg/cmqV4JXEHe" target="_blank" rel="noopener noreferrer">
                 10CT Discord
               </a>{" "}
               and check the channels to see if your question's already been
@@ -92,7 +92,7 @@ function Home(){
             </li>
             <li>
               DM me on{" "}
-              <a className="CTATwitter" href="https://twitter.com/in10cityGCC">
+              <a className="CTATwitter" href="https://twitter.com/in10cityGCC" target="_blank" rel="noopener noreferrer">
                 Twitter
               </a>
               , and make sure to follow for updates on new premade controller

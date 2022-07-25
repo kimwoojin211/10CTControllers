@@ -43,14 +43,14 @@ function Header(props){
         {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSetB5_ocLehaWCkuh77VvXX6bjMfFWCPrtmXZMEwcSN1OIskg/viewform"  className="navCommission button">Commission</a> */}
         <p className="navCommission button" onClick={ () => onCommissionClicked(true)}>Commission</p>
         <div className="navContacts row">
-          <a className="navDiscord" href="https://discord.gg/EajRdDrR">
+          <a className="navDiscord" href="https://discord.gg/cmqV4JXEHe" target="_blank" rel="noopener noreferrer">
             <img
               src={discordLogo}
               className="img--small"
               alt="10CT discord server"
             />
           </a>
-          <a className="navTwitter" href="https://twitter.com/in10cityGCC">
+          <a className="navTwitter" href="https://twitter.com/in10cityGCC" target="_blank" rel="noopener noreferrer">
             <img src={twitterLogo} className="img--small" alt="10CT twitter" />
           </a>
         </div>
