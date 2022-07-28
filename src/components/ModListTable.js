@@ -10,7 +10,7 @@ function ModListTable(props){
           <div className="modListItem row">
             <div className="modListFeature" id={`${props.tableId}Item${index}`}>
               <span data-tip data-for={`${props.tableId}Item${index}`}>{modification.feature}{" "}
-              {modification.oem && <span className="oemOnly">(OEM only)</span>}</span>
+              {modification.oem && <span className="oemOnly">(OEM orders only)</span>}</span>
               <ReactTooltip id={`${props.tableId}Item${index}`} place="right" type="light">
                 <div className="modListTooltipContainer">
                   {modification.image && <img className="img--lrg" src={modification.image}/>}

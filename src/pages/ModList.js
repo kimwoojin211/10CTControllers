@@ -104,7 +104,7 @@ function ModList(){
       <div className="pageBody modListBody container">
         <h1 className="pageTitle">MOD LIST</h1>
         {/* <p className="pageNote"><i>Domestic shipping done through USPS or UPS. International shipping is typically ~$20 and takes ~1-3 weeks. Please contact me for more details.</i></p> */}
-        <p className="pageNote"><i>Hover over (or press on mobile) an item on the modlist to view an image and/or a description of the modification. </i></p>
+        <p className="pageNote"><i>Hover over (or press on mobile) an item on the modlist to view an image and/or a description of the listed mod.</i></p>
         <ModListTable
           tableTitle= "Base Controller Colors"
           tableId="color"

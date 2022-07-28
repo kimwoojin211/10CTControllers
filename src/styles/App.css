@@ -84,7 +84,7 @@ li{
 
 .pageNote{
   margin:0.2rem auto;
-  font-size: 0.8rem;
+  font-size: 0.84rem;
 }
 
 .button{
@@ -162,6 +162,9 @@ li{
   text-decoration: underline;
   font-size: 0.8rem;
   margin:0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(255,255,255,0.48);
 }
 
 .navContacts{
@@ -749,7 +752,7 @@ li{
   }
 
   .navCommission{
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .playerList{
