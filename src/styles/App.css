@@ -83,7 +83,7 @@ li{
 
 .pageBody{
   height:100%;
-  margin: 90px auto 1rem auto;
+  margin: 0 auto 2rem auto;
 }
 
 .pageNote{
@@ -272,6 +272,12 @@ li{
   background-color: rgb(1, 22, 117) 
 }
 
+.commissionFootnote{
+  width: 90%;
+  font-size: 0.7rem;
+  margin: 1rem auto 0 auto;
+}
+
 /* ~~~~~~~~~ Home ~~~~~~~~~~~ */
 
 /* ~~~~ Hero ~~~~ */
@@ -374,7 +380,7 @@ li{
 }
 
 .rank{
-  transform:rotate(-22deg) translate(-30px, -9px);
+  transform:rotate(-22deg) translate(-27px, -9px);
   text-align:center;
   line-height:0.8;
   font-size:1.2rem;
@@ -903,6 +909,11 @@ li{
   .img--med {
     width: 100px;
     height: 100px;
+  }
+
+  
+  .commissionFootnote{
+    font-size: 0.85rem;
   }
 
   .rank>.current{

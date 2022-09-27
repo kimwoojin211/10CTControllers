@@ -34,6 +34,7 @@ function CommissionPopUp(props){
             OEM GCC
           </a>
         </div>
+        <p className="commissionFootnote">*For questions about the differences between a OEM GCC & a PhobGCC, please refer to the FAQ.</p>
       </div>
     </div>
   );

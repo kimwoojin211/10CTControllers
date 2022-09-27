@@ -50,7 +50,7 @@ function Home(){
             className="CTACommission button"
             href="https://forms.gle/eU3eYAq7BWymBMR76"
           >
-            Click here for the standard GCC commission form.
+            Click here for the standard OEM GCC commission form.
           </a>
           <a
             href="https://forms.gle/oHdcpBJLUZG68md66"
