@@ -1,6 +1,5 @@
 import React from 'react';
 import ModListTable from '../components/ModListTable';
-import backgroundImg from '../img/background/falcolaser.jpg';
 import Black from '../img/conchColors/black.jpg';
 import Indigo from '../img/conchColors/indigo.jpg';
 import IndigoClear from '../img/conchColors/indigoClear.png';
@@ -67,43 +66,11 @@ const miscArray = [
   { feature: "Remove Rumble Pack", price: "Free", image: NoRumble, description: "Removes the rumble motor pack within the gamecube controller, making the controller noticeably lighter." },
 ];
 
-// const modListArray = [
-//   {feature:"T3 Stickbox Replacement", price:"$5"},
-//   {feature:"T1 / T2 Stickbox Replacement", price:"$10"},
-//   {feature:"Potentiometer Replacement (Slightly Used, but no PODE)", price:"$10"},
-//   {feature:"Potentiometer Replacement (Factory New)", price:"$20"},
-//   {feature:"Snapback Modules (No Reset, Adjustable, both axis)", price:"$25"},
-//   {feature:"Snapback Capacitors (per axis, X Y Start on Plugin)", price:"$5"},
-//   {feature:"Tactile Z", price:"$7.50"},
-//   {feature:"Tactile Z (Soft, 100g similar to OEM Z)", price:"$10"},
-//   {feature:"Trigger Plugs (Request Half or Full Plugs)", price:"$10"},
-//   {feature:"Parry Triggers / Digital to Analog Trigger Press (per trigger)", price:"$15"},
-//   {feature:"Paracord Cable (Copper Shielding intact for short cables, removed for long cables)", price:"$35"},
-// ];
-
-// const notchArray= [
-//   {feature:"Shield Drop Notches (non-UCF)", price:"$15"}, 
-//   {feature:"Wavedash Notches", price:"$25"},
-//   {feature:"Shield Drop + Wavedash Hybrid Notches (non-UCF)", price:"$45"}, 
-//   {feature:"North + West + East Firefox Angles (max firefox for 3 cardinals, max wavedash, shield drop)", price:"$70"}, 
-//   {feature:"Full Firefox Gate / Hybrid Gate (max firefox, max wd, min wavedash, shield drop)", price:"$80"}, 
-// ];
-
-// const tensionModArray =[
-//   {feature:"Lubed Triggers",price:"*"},
-//   {feature:"Trigger Springs Cut or Removed",price:"*"},
-//   {feature:"Z Button Spring Removed",price:"*"},
-//   {feature:"Trigger Pad Perforation",price:"*"},
-//   {feature:"Face Button Pad Perforation",price:"*"},
-//   ];
-
 function ModList(){
   return(
     <React.Fragment>
-      {/* <img src={backgroundImg} className="bg" alt="falco laser background"/> */}
       <div className="pageBody modListBody container">
         <h1 className="pageTitle">MOD LIST</h1>
-        {/* <p className="pageNote"><i>Domestic shipping done through USPS or UPS. International shipping is typically ~$20 and takes ~1-3 weeks. Please contact me for more details.</i></p> */}
         <p className="pageNote"><i>Hover over (or press on mobile) an item on the modlist to view an image and/or a description of the listed mod.</i></p>
         <ModListTable
           tableTitle= "Base Controller Colors"
@@ -120,9 +87,6 @@ function ModList(){
           tableId="misc"
           modListArray={miscArray}/>
 
-        {/* <p className="pageNote"><i>* 1 tension mod free of charge w/ a commission,<br/>
-        2 tension mods is $2.50 total,<br/>
-        3+ tension mods is $5.00 total.</i></p> */}
       </div>
     </React.Fragment>
   )

@@ -7,7 +7,6 @@ function CommissionPopUp(props){
     if(event.target.className === "closeButton" || event.target.className === "fullPageOverlay commissionOverlay"){
       onCommissionClicked(false);
     }
-    // console.log(event.target.className);
   }
 
   return (

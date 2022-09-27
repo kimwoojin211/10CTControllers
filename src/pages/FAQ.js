@@ -5,20 +5,16 @@ function FAQ(){
   const [selectedQuestion,setSelectedQuestion] = useState(0);
   const handleFAQClick = (ev,index) =>{
     const questionIndex = parseInt(ev.currentTarget.id[1]);
-    console.log(`selectedQuestion: ${selectedQuestion}`);
-    console.log(`questionIndex: ${questionIndex}`);
     if(selectedQuestion === 0 || selectedQuestion !== questionIndex){ 
       setSelectedQuestion(index);
     }
     else{
       setSelectedQuestion(0);
     }
-    // console.log(`event: ${JSON.stringify(ev)}`)
   }
 
   return(
     <React.Fragment>
-      {/* <h3 className="pageSubtitle">Click on a question to reveal an answer!</h3> */}
       <div className="pageBody FAQBody container">
         <h1 className="pageTitle">FAQ</h1>
         <div className="FAQList">
@@ -30,7 +26,6 @@ function FAQ(){
               <ul><li>I am a controller modder based locally in SoCal. I started modding in October 2020 by providing controllers for Asashi (current ranked #13 in Socal's PR) and have since provided controllers to more players of the SoCal region, including PR'ed players such as Suf, Casper, Venelox, Franz, and Squid.</li>
               <li>I pride myself on providing an affordable, speedy service, and my goal is to get more tournament-level controllers into more people's hands. At the moment, I try to make just enough money to get by, while working just enough so that I can still focus on university.</li>
               <li>Other than wanting to provide more affordable controllers, the biggest thing that I want for the community is <b>better knowledge about their controllers</b>. Therefore, I encourage anybody and everybody to ask me about controller related topics regarding Super Smash Bros. Melee.</li></ul>
-              {/* <ul><li><p className="FAQAnswer">I am a controller modder based in SoCal that started in October of 2020 and started providing controllers to current #17th SoCal PRed player Asashi. Since then I’ve provided controllers to a lot more of the SoCal PR such as Suf, Casper, Venelox, Franz, and Squid. I pride myself on controller modding on trying to provide an affordable and speedy service and trying to get more tournament level controllers in more peoples hands. I try to make just enough money to get by and work enough that I can still focus on university. Other than wanting to provide more affordable controllers, the biggest thing that I want to provide to the community is better knowledge about their controllers and therefore I encourage anybody and everybody to ask me about controller related topics regarding Super Smash Bros. Melee.</p></li></ul> */}
             </div>
           </div>
           <div className="FAQListItemContainer" key={2}>
@@ -116,21 +111,6 @@ function FAQ(){
                   <p><b>Note:</b> This only needs to be done on console, or, for Smash Ultimate, on third party adapters.</p>
             </div>
           </div>
-          
-        {/* {
-          testFAQ.map((FAQitem,index) => 
-            <div className="FAQListItemContainer" key={index}>
-              <div className="FAQQuestionWrapper" onClick={(ev) => handleFAQClick(ev,index)} id={'q'+index}>
-                <h2 className="FAQQuestion">{FAQitem.question}</h2>
-              </div>
-              <div className="FAQAnswerWrapper" style={{display: (index===selectedQuestion) ? 'block':'none'}}>
-                <p className="FAQAnswer">{FAQitem.answer}</p>
-              </div>
-            </div>
-          )
-        } */}
-        
-
         </div>
       </div>
     </React.Fragment>

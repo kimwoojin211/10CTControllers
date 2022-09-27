@@ -16,7 +16,6 @@ const playerArray = [{tag:"Suf", image:Suf, pr:8}, {tag:"Franz", image:Franz, pr
 const testimonialArray = ["1472063565095915523", "1448828944652795906", "1402415528673697792", "1420643017522774018", "1427355646794555393", "1430298525250715650", "1430996181438681095", "1441509134789222400", "1442394120656355334"]
 
 function Home(){
-  console.log(testimonialArray);
   return (
     <React.Fragment>
       <Hero />
@@ -111,7 +110,6 @@ function Home(){
                   <TwitterTweetEmbed
                     onLoad={function noRefCheck() {}}
                     options={{ theme: "dark", align: "center" }}
-                    // pauseOnHover={true}
                     tweetId={tweetId}
                   />
                 </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import {HashRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Premades from "./pages/Premades";
+// import Premades from "./pages/Premades";
 import ModList from "./pages/ModList";
 import FAQ from "./pages/FAQ";
 import CommissionPopUp from "./components/CommissionPopUp";
@@ -27,7 +27,7 @@ function App() {
         <main className="main">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Premades" element={<Premades />} />
+            {/* <Route path="/Premades" element={<Premades />} /> */}
             <Route path="/ModList" element={<ModList />} />
             <Route path="/FAQ" element={<FAQ />} />
           </Routes>

@@ -1,14 +1,14 @@
-import React from 'react';
+// import React from 'react';
 
 
-function Admin(){
-  return(
-    <React.Fragment>
-      <div className="admin-container">
+// function Admin(){
+//   return(
+//     <React.Fragment>
+//       <div className="admin-container">
         
-      </div>
-    </React.Fragment>
-  )
-}
+//       </div>
+//     </React.Fragment>
+//   )
+// }
 
-export default Admin;
+// export default Admin;
