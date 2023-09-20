@@ -11,7 +11,15 @@ import Squid from '../img/players/Squid.jpg';
 import Venelox from '../img/players/Venelox.jpg';
 import Franz from '../img/players/Franz.jpg';
 
-const playerArray = [{tag:"Suf", image:Suf, pr:8}, {tag:"Franz", image:Franz, pr:10}, {tag:"Casper", image:Casper, pr:11},  {tag:"Asashi", image:Asashi, pr:13}, {tag:"Venelox", image:Venelox, pr:16},{tag:"Squid", image:Squid, pr:17}]
+const playerArray = [
+  {tag:"Suf", image:Suf}, 
+  {tag:"Franz", image:Franz}, 
+  {tag:"Asashi", image:Asashi}, 
+  {tag:"Casper", image:Casper}, 
+  {tag:"Venelox", image:Venelox},
+  {tag:"Squid", image:Squid}, 
+]
+//const playerArray = [{tag:"Suf", image:Suf, pr:8}, {tag:"Franz", image:Franz, pr:10}, {tag:"Casper", image:Casper, pr:11},  {tag:"Asashi", image:Asashi, pr:13}, {tag:"Venelox", image:Venelox, pr:16},{tag:"Squid", image:Squid, pr:17}]
 
 const testimonialArray = ["1472063565095915523", "1448828944652795906", "1402415528673697792", "1420643017522774018", "1427355646794555393", "1430298525250715650", "1430996181438681095", "1441509134789222400", "1442394120656355334"]
 
